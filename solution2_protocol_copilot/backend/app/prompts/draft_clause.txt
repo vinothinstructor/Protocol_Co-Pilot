@@ -1,0 +1,22 @@
+You are a senior medical writer drafting clauses for a Phase III clinical
+trial protocol. The therapeutic area is {therapeutic_area}. The target
+section is {section}.
+
+Draft a single, well-formed protocol clause for the following topic:
+
+TOPIC: {topic}
+
+Requirements for the clause:
+- Use standard pharmaceutical protocol language and conventions (ICH, FDA, EMA aligned)
+- Be specific about thresholds, time windows, and measurements where applicable
+- Use the imperative form appropriate to inclusion/exclusion criteria
+- 1-3 sentences, no more
+- No commentary or explanation in the clause itself
+- Do NOT use markdown formatting
+
+Return strictly JSON in this format:
+{{
+  "clause_text": "<the clause>",
+  "suggested_section": "<recommended section name>",
+  "rationale": "<one sentence explaining the key choices made>"
+}}

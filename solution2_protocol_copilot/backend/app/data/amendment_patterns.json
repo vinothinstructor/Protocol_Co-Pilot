@@ -1,0 +1,452 @@
+[
+  {
+    "pattern_id": "AMD_001",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must be drug-naïve with no prior antidiabetic agents of any kind.",
+    "amendment": "Allow patients with up to 1 prior line of oral antidiabetic therapy (excluding insulin) discontinued at least 3 months before screening.",
+    "root_cause": "Screen failure rate exceeded 70% in the first 8 weeks; the T2DM target population is almost universally initiated on metformin at diagnosis, making truly drug-naïve patients vanishingly rare.",
+    "therapeutic_areas": ["diabetes", "metabolic"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_002",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Body mass index (BMI) must be ≥30 and ≤35 kg/m² at screening.",
+    "amendment": "Widen BMI eligibility window to ≥27 and ≤40 kg/m² to capture a clinically meaningful obese population.",
+    "root_cause": "The 5-unit BMI band excluded the majority of screened patients; real-world obesity clinics report modal BMI of 37–39 kg/m², and the narrow range produced less than 12% screen-to-enroll conversion.",
+    "therapeutic_areas": ["obesity", "metabolic", "diabetes"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_003",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must have a documented diagnosis of major depressive disorder for ≥24 months prior to enrollment.",
+    "amendment": "Reduce minimum diagnosis duration to ≥12 months with at least one documented moderate-to-severe depressive episode.",
+    "root_cause": "The 24-month chronicity requirement excluded recently diagnosed patients who constitute the largest treatment-seeking cohort; sites reported over 60% screen failure attributable solely to this criterion.",
+    "therapeutic_areas": ["psychiatry", "neurology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_004",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must have a baseline LVEF ≥55% as confirmed by echocardiography within 30 days of screening.",
+    "amendment": "Lower LVEF threshold to ≥45% and extend the qualifying echocardiogram window to 90 days.",
+    "root_cause": "The preserved-EF criterion inadvertently excluded heart failure patients with mildly reduced EF (HFmrEF), who represent approximately 25% of the HF population targeted by the mechanism; the 30-day window also required repeat imaging for many patients.",
+    "therapeutic_areas": ["cardiology", "heart failure"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_005",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must have a glycated hemoglobin (HbA1c) of ≥8.5% and ≤10.0% at screening.",
+    "amendment": "Expand HbA1c eligibility range to ≥7.5% and ≤11.5% to broaden the at-risk diabetic population.",
+    "root_cause": "The narrow glycemic band was set during Phase 2 on a different population; Phase 3 sites in South-East Asia found that local standard of care achieves moderate control, placing most candidates below 8.5%.",
+    "therapeutic_areas": ["diabetes", "metabolic"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_006",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must have received at least 3 prior lines of systemic anti-cancer therapy for metastatic disease.",
+    "amendment": "Reduce minimum prior therapy lines to 2 to expand access and align with current standard-of-care sequencing.",
+    "root_cause": "Recent approvals of combination immunotherapy regimens in second-line settings have shifted the treatment landscape; patients who progress after 2 lines now have no approved options, making the 3-line requirement medically inappropriate.",
+    "therapeutic_areas": ["oncology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_007",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must have a documented CD4+ T-cell count ≥500 cells/mm³ at screening.",
+    "amendment": "Lower CD4+ threshold to ≥350 cells/mm³ consistent with current WHO treatment initiation guidelines.",
+    "root_cause": "WHO and DHHS guidelines no longer use 500 cells/mm³ as a treatment threshold; the criterion unnecessarily excluded immunocompromised patients for whom the investigational regimen offers the greatest potential benefit.",
+    "therapeutic_areas": ["infectious disease", "HIV"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_008",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must have a creatinine clearance ≥90 mL/min (calculated by Cockcroft-Gault) at screening.",
+    "amendment": "Lower renal eligibility threshold to CrCl ≥60 mL/min to include patients with mild-to-moderate renal impairment.",
+    "root_cause": "The investigational agent's pharmacokinetic data submitted post-IND demonstrates no clinically meaningful accumulation down to CrCl 50 mL/min; the original threshold excluded elderly patients who represent the primary indication population.",
+    "therapeutic_areas": ["nephrology", "cardiology", "diabetes"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_009",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must have active rheumatoid arthritis with DAS28-CRP score ≥5.1 at both screening and baseline visits.",
+    "amendment": "Accept DAS28-CRP ≥3.2 (moderate disease) at both visits, or DAS28-CRP ≥5.1 at one visit with investigator confirmation of active disease.",
+    "root_cause": "Requiring high DAS28 at two separate visits separated by up to 4 weeks produced excessive screen failures when patients received bridging corticosteroids between visits, artificially suppressing the second measurement.",
+    "therapeutic_areas": ["rheumatology", "immunology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_010",
+    "category": "inclusion_too_restrictive",
+    "example_clause": "Patients must have a MMSE score of ≥18 and ≤24 indicating mild-to-moderate cognitive impairment.",
+    "amendment": "Expand the MMSE range to ≥15 and ≤26 and allow either MMSE or MoCA ≥13 as qualifying cognitive assessments.",
+    "root_cause": "Neuropsychologists at study sites flagged that the narrow MMSE window misclassifies patients with high premorbid IQ who score above 24 despite genuine MCI; the MoCA adds sensitivity for earlier-stage impairment.",
+    "therapeutic_areas": ["neurology", "psychiatry", "geriatrics"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_011",
+    "category": "exclusion_too_broad",
+    "example_clause": "Patients with ALT or AST >3×ULN at screening are excluded from participation.",
+    "amendment": "Raise transaminase exclusion threshold to >5×ULN for patients without symptoms of hepatic disease, with re-screening permitted after 4 weeks.",
+    "root_cause": "The 3×ULN cut-off is appropriate for hepatotoxic drugs but the investigational agent has no identified hepatic signal; NASH and NAFLD comorbidities—prevalent in the study population—routinely produce transaminase elevations of 3–5×ULN, causing unnecessary exclusions.",
+    "therapeutic_areas": ["hepatology", "metabolic", "diabetes"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_012",
+    "category": "exclusion_too_broad",
+    "example_clause": "Patients with any prior malignancy within 5 years are excluded.",
+    "amendment": "Allow patients with adequately treated basal cell carcinoma, squamous cell carcinoma of the skin, or carcinoma in situ (cervix, breast) regardless of timing.",
+    "root_cause": "The blanket malignancy exclusion was copied from an earlier oncology protocol; the current indication is autoimmune and the investigational agent has no oncogenic mechanism; low-grade skin cancers do not represent meaningful safety confounders.",
+    "therapeutic_areas": ["rheumatology", "dermatology", "immunology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_013",
+    "category": "exclusion_too_broad",
+    "example_clause": "Patients with a current or prior history of any psychiatric disorder are excluded.",
+    "amendment": "Exclude only patients with active psychosis, bipolar I disorder, or suicidal ideation within 6 months; stable, treated anxiety and depression are permissible.",
+    "root_cause": "Broad psychiatric exclusion reflects early-phase caution; epidemiological data show that 35–40% of the pain indication population carries a comorbid mood disorder; the exclusion prevents enrollment of the real-world patient without safety justification.",
+    "therapeutic_areas": ["pain", "neurology", "psychiatry"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_014",
+    "category": "exclusion_too_broad",
+    "example_clause": "Use of any concomitant medication within 30 days prior to screening, including over-the-counter drugs and herbal supplements, is exclusionary.",
+    "amendment": "Restrict the medication exclusion to drugs with known CYP3A4 induction or inhibition or direct pharmacodynamic interaction; allow stable concomitant medications with sponsor medical monitor approval.",
+    "root_cause": "Blanket washout of all medications is clinically unrealistic for a chronic-disease population; the requirement generated a 40% dropout rate at consent after patients learned they must discontinue statins, antihypertensives, and vitamins.",
+    "therapeutic_areas": ["cardiology", "metabolic", "geriatrics"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_015",
+    "category": "exclusion_too_broad",
+    "example_clause": "Patients with eGFR <60 mL/min/1.73m² are excluded.",
+    "amendment": "Permit patients with eGFR 30–59 mL/min/1.73m² (CKD stage 3) with enhanced renal monitoring and dose reduction guidance.",
+    "root_cause": "Renal pharmacokinetic data from the Phase 1 impairment study demonstrated only 22% drug exposure increase at eGFR 30–60; the benefit-risk remains favorable with dose adjustment; CKD-3 patients represent a key commercial segment.",
+    "therapeutic_areas": ["nephrology", "cardiology", "diabetes"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_016",
+    "category": "exclusion_too_broad",
+    "example_clause": "Patients with a smoking history of >10 pack-years, regardless of current smoking status, are excluded.",
+    "amendment": "Restrict exclusion to current smokers consuming ≥10 cigarettes/day; former smokers regardless of pack-year history may participate.",
+    "root_cause": "Pack-year history is a surrogate for COPD comorbidity; PFT-confirmed COPD is already captured by a separate exclusion; the pack-year criterion added redundancy while disproportionately excluding patients from high-prevalence eastern European sites.",
+    "therapeutic_areas": ["respiratory", "cardiology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_017",
+    "category": "exclusion_too_broad",
+    "example_clause": "Prior use of any biologic agent for any indication within the past 12 months is exclusionary.",
+    "amendment": "Exclude only biologics with direct mechanistic overlap with the investigational agent (anti-IL-6, anti-IL-17, anti-TNF); allow prior biologics for unrelated indications with 5 half-life washout.",
+    "root_cause": "A patient on omalizumab for asthma was excluded under the blanket biologic criterion despite no pharmacodynamic interaction; the broad exclusion reduces the eligible pool by an estimated 30% without meaningful safety rationale.",
+    "therapeutic_areas": ["rheumatology", "dermatology", "immunology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_018",
+    "category": "exclusion_too_broad",
+    "example_clause": "Patients with a QTcF interval >430 ms (males) or >440 ms (females) at screening ECG are excluded.",
+    "amendment": "Align QTcF exclusion threshold with ICH E14 guidance: exclude patients with QTcF >450 ms (males) or >470 ms (females), or confirmed QTcF >500 ms.",
+    "root_cause": "The original thresholds were set below ICH E14 reference ranges and excluded approximately 15% of patients with normal physiologic variation; the thorough QT study showed no QTc prolongation with the investigational agent.",
+    "therapeutic_areas": ["cardiology", "psychiatry", "oncology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_019",
+    "category": "exclusion_too_broad",
+    "example_clause": "Patients with any autoimmune condition other than the study indication are excluded.",
+    "amendment": "Allow well-controlled autoimmune comorbidities (e.g., Hashimoto's thyroiditis, vitiligo, stable celiac disease) not requiring systemic immunosuppression.",
+    "root_cause": "Hashimoto's thyroiditis affects up to 10% of women in the COPD indication age group; excluding patients on stable thyroid replacement for a condition unrelated to the study drug mechanism produced large-scale unnecessary screen failures.",
+    "therapeutic_areas": ["immunology", "endocrinology", "rheumatology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_020",
+    "category": "exclusion_too_broad",
+    "example_clause": "Patients with alcohol consumption of >7 units/week (females) or >14 units/week (males) are excluded.",
+    "amendment": "Raise threshold to >14 units/week (females) or >21 units/week (males) and add structured AUDIT-C screening; exclude only patients with AUDIT-C ≥8 indicating harmful use.",
+    "root_cause": "The original limits fell below UK Chief Medical Officers' lower-risk guidelines and flagged moderate social drinkers as excluded; the investigational agent has no hepatotoxic potential and alcohol interaction PK data are available.",
+    "therapeutic_areas": ["hepatology", "psychiatry", "pain"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_021",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "The QoL_12 quality-of-life questionnaire will be administered in local languages at all international sites.",
+    "amendment": "Replace QoL_12 with the EQ-5D-5L as the secondary patient-reported outcome; EQ-5D-5L has validated translations in all 14 study languages including Mandarin Chinese (zh-CN) and Brazilian Portuguese (pt-BR).",
+    "root_cause": "The QoL_12 instrument lacks psychometrically validated translations into Mandarin Chinese (zh) and Brazilian Portuguese (pt); these two language groups represent 38% of planned enrollment; use of unvalidated forward-only translations would not satisfy FDA PRO guidance requirements.",
+    "therapeutic_areas": ["oncology", "diabetes", "respiratory", "rheumatology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_022",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "The primary efficacy endpoint is change from baseline in the Functional Disability Index (FDI-R) at Week 24.",
+    "amendment": "Replace FDI-R with the PROMIS Physical Function short-form (10a) as primary endpoint; retain FDI-R as an exploratory endpoint.",
+    "root_cause": "FDA pre-NDA meeting feedback indicated that FDI-R lacks content validity evidence from qualitative patient interviews in the musculoskeletal pain indication; PROMIS Physical Function has an existing FDA-qualified evidentiary base.",
+    "therapeutic_areas": ["rheumatology", "pain", "orthopedics"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_023",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "Sleep quality will be assessed using the Pittsburgh Sleep Quality Index (PSQI) collected via clinic-administered paper form.",
+    "amendment": "Supplement PSQI with actigraphy-based objective sleep measurement; transition PSQI administration to eCOA platform to enable nightly ecological momentary assessment.",
+    "root_cause": "The recall period of the PSQI (past month) introduces significant recall bias in a 12-week study; FDA's COA staff has signaled that objective sleep endpoints will be required to support a labeling claim in insomnia-related indications.",
+    "therapeutic_areas": ["psychiatry", "neurology", "pain"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_024",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "Disease severity will be rated by the investigator using the Global Assessment Scale (GAS-7) at each visit.",
+    "amendment": "Replace GAS-7 with the Investigator's Global Assessment (IGA) 5-point scale, which has established psychometric properties and is the FDA-recommended measure for this dermatological indication.",
+    "root_cause": "GAS-7 was developed by the sponsor's academic collaborator and has not undergone independent psychometric validation; FDA's 2020 draft guidance on atopic dermatitis endpoints specifically recommends the IGA for regulatory submissions.",
+    "therapeutic_areas": ["dermatology", "immunology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_025",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "Patient-reported pain will be measured using a 10-cm visual analogue scale (VAS) on paper diary cards.",
+    "amendment": "Transition to an 11-point Numerical Rating Scale (NRS-11) administered via validated eCOA app; NRS-11 demonstrates superior reliability, eliminates digit preference artifact, and enables real-time compliance monitoring.",
+    "root_cause": "FDA's 2020 guidance on chronic pain endpoints recommends electronic NRS over paper VAS; paper VAS has known scoring errors and backfilling; two recent NDA submissions using paper VAS received Complete Response Letters partly on COA grounds.",
+    "therapeutic_areas": ["pain", "neurology", "rheumatology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_026",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "Cognitive function will be assessed using the COGSTATE battery at Weeks 0, 12, and 24.",
+    "amendment": "Replace COGSTATE with the MATRICS Consensus Cognitive Battery (MCCB) at Weeks 0, 12, and 24; add a practice session at the screening visit to mitigate learning effects.",
+    "root_cause": "FDA and EMA regulatory precedent for the target schizophrenia indication requires MCCB as the cognitive endpoint for labeling claims; COGSTATE data would be considered exploratory only, creating a registration gap in the Phase 3 dataset.",
+    "therapeutic_areas": ["psychiatry", "neurology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_027",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "Health-related quality of life will be assessed using the SF-36v1 administered at baseline and end of study.",
+    "amendment": "Replace SF-36v1 with SF-36v2 and add disease-specific KCCQ-12 for the cardiovascular population; increase assessment frequency to baseline, Week 12, and Week 24.",
+    "root_cause": "SF-36v1 has known floor effects in severely ill cardiac populations and lacks norm-based scoring available in SF-36v2; KCCQ-12 is specifically validated in heart failure and aligns with FDA's endpoint qualification for HF labeling.",
+    "therapeutic_areas": ["cardiology", "heart failure"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_028",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "Fatigue will be assessed using the Fatigue Severity Scale (FSS) at each monthly clinic visit.",
+    "amendment": "Replace FSS with the FACIT-Fatigue scale; add weekly eDiary administration to capture intra-cycle variation in fatigue burden.",
+    "root_cause": "FSS was developed and validated in MS and SLE patients; the target indication (chemotherapy-induced fatigue) has a different fatigue phenotype for which FACIT-Fatigue has specific content validity evidence and FDA labeling precedent.",
+    "therapeutic_areas": ["oncology", "hematology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_029",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "Depressive symptom severity will be assessed using the Hamilton Depression Rating Scale (HAM-D17) administered by clinic staff.",
+    "amendment": "Replace HAM-D17 with the Montgomery-Åsberg Depression Rating Scale (MADRS) and add the PHQ-9 as a patient-reported companion measure; implement rater training certification program.",
+    "root_cause": "MADRS shows greater sensitivity to change in antidepressant trials and has become the FDA-preferred rating scale in recent Major Depressive Disorder NDA reviews; HAM-D17 somatic items conflate depression severity with comorbid anxiety, inflating baseline scores.",
+    "therapeutic_areas": ["psychiatry"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_030",
+    "category": "endpoint_instrument_unvalidated",
+    "example_clause": "Asthma control will be assessed using the Asthma Control Questionnaire (ACQ-5) at clinic visits every 4 weeks.",
+    "amendment": "Supplement ACQ-5 with weekly eDiary-based Asthma Control Test (ACT) scores; add home peak flow monitoring with electronic meter to capture between-visit exacerbation events.",
+    "root_cause": "Four-week clinic visit intervals miss acute exacerbation events that define the primary endpoint; FDA has requested real-time symptom capture in asthma trials following missed exacerbation events in two recent submissions.",
+    "therapeutic_areas": ["respiratory", "immunology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_031",
+    "category": "visit_schedule_burdensome",
+    "example_clause": "Patients are required to attend weekly clinic visits for the 24-week treatment period.",
+    "amendment": "Reduce mandatory in-clinic visits to monthly (every 4 weeks); permit alternate-week safety assessments via validated telemedicine platform with home nursing for blood draws.",
+    "root_cause": "Weekly visit frequency over 24 weeks generated a 28% dropout rate driven by transportation burden, work absenteeism, and caregiver conflicts; comparable Phase 2 data show no incremental safety signal between weekly and monthly monitoring.",
+    "therapeutic_areas": ["oncology", "diabetes", "rheumatology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_032",
+    "category": "visit_schedule_burdensome",
+    "example_clause": "All scheduled study visits must be completed within a ±3-day window of the target date.",
+    "amendment": "Expand visit windows to ±7 days for Weeks 4–20 and retain ±3 days only for primary endpoint assessment visits (Week 24).",
+    "root_cause": "The ±3-day window generated a 19% protocol deviation rate at sites in time-zone-dispersed countries; weekend clinic closures and national holidays in APAC and LatAm sites made compliance structurally impossible without accruing protocol deviations.",
+    "therapeutic_areas": ["oncology", "cardiology", "diabetes", "rheumatology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_033",
+    "category": "visit_schedule_burdensome",
+    "example_clause": "A 24-hour in-patient observation period is required following each of the 4 intravenous infusion visits.",
+    "amendment": "Replace mandatory 24-hour inpatient observation with a 4-hour post-infusion observation period for patients who tolerate the first infusion without grade ≥2 infusion reactions.",
+    "root_cause": "Mandatory overnight hospitalization for every infusion cycle exhausted available inpatient beds at community oncology sites; the pharmacokinetic half-life supports a 4-hour observation window; post-marketing safety data from a structurally related molecule support the shortened window.",
+    "therapeutic_areas": ["oncology", "hematology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_034",
+    "category": "visit_schedule_burdensome",
+    "example_clause": "Patients must complete a 14-day inpatient pharmacokinetic run-in period before randomization.",
+    "amendment": "Replace the 14-day inpatient PK run-in with a 3-day inpatient stay for intensive PK sampling followed by outpatient sparse sampling on Days 7 and 14.",
+    "root_cause": "The original inpatient run-in design was carried over from a Phase 1 FIH study; modeling and simulation using Phase 1 data demonstrates that a 3-day dense sampling design recovers equivalent PK parameter precision; 14-day hospitalization prevented working-age patients from enrolling.",
+    "therapeutic_areas": ["infectious disease", "HIV", "metabolic"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_035",
+    "category": "visit_schedule_burdensome",
+    "example_clause": "Blood samples for biomarker analysis must be collected at Hours 0, 1, 2, 4, 6, 8, and 12 post-dose on Day 1.",
+    "amendment": "Reduce mandatory PK timepoints to Hours 0, 2, 6, and 12 for non-PK-intensive substudy patients; retain full 7-timepoint schedule for the designated PK-intensive substudy cohort (n=30).",
+    "root_cause": "Serial 12-hour blood draws on Day 1 required patients to remain in clinic overnight; patient advocacy groups flagged this as a primary deterrent to participation; a sparse PK sampling design validated by population PK modeling achieves equivalent AUC precision.",
+    "therapeutic_areas": ["hematology", "oncology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_036",
+    "category": "visit_schedule_burdensome",
+    "example_clause": "Patients must return to the study site within 24 hours of any dose administration for next-day safety laboratory assessments.",
+    "amendment": "Allow next-day safety labs to be collected at certified local laboratories with results transmitted electronically to the site within 4 hours; eliminate mandatory site return for Grade 1 or lower safety findings.",
+    "root_cause": "Patients living more than 50 km from the study site (approximately 30% of enrolled patients) found same-day dosing and next-day return logistically prohibitive; two sites lost more than 40% of their enrolled patients to dropout within the first two treatment cycles.",
+    "therapeutic_areas": ["oncology", "cardiology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_037",
+    "category": "visit_schedule_burdensome",
+    "example_clause": "An end-of-treatment visit must be conducted within 7 days of the last dose, followed by follow-up visits at 30, 60, 90, and 180 days post-treatment.",
+    "amendment": "Combine the 30- and 60-day follow-up into a single Day 45 visit; allow Day 90 and Day 180 follow-up visits to be conducted via validated telemedicine with remote patient-reported outcome capture.",
+    "root_cause": "A 4-visit post-treatment follow-up schedule over 6 months produced 35% loss to follow-up; telemedicine-based long-term follow-up has regulatory precedent in recent FDA approvals and recovers endpoint-critical safety and efficacy data.",
+    "therapeutic_areas": ["oncology", "rheumatology", "psychiatry"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_038",
+    "category": "safety_update_required",
+    "example_clause": "Adverse events of special interest include hepatotoxicity and nephrotoxicity to be monitored per standard laboratory assessments.",
+    "amendment": "Add interstitial lung disease (ILD) as an adverse event of special interest; implement high-resolution CT chest screening at baseline and at first sign of respiratory symptoms; add ILD-specific stopping rules.",
+    "root_cause": "Post-marketing surveillance of a structurally related compound identified ILD incidence of 2.8%; the emerging safety signal was communicated via regulatory health authority queries to three ongoing trials; the protocol must be updated to align with current risk minimization measures.",
+    "therapeutic_areas": ["oncology", "rheumatology", "respiratory"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_039",
+    "category": "safety_update_required",
+    "example_clause": "Suicidal ideation will be assessed using clinical judgment at the investigator's discretion.",
+    "amendment": "Implement mandatory Columbia Suicide Severity Rating Scale (C-SSRS) assessment at every study visit; add explicit stopping rules and safety management guidelines for C-SSRS score ≥3; update informed consent to reflect suicidality risk.",
+    "root_cause": "FDA issued a safety communication requiring C-SSRS monitoring for all CNS drug trials after three SAE reports of suicidal ideation in unrelated studies using the same mechanism; the requirement applies to all active protocols.",
+    "therapeutic_areas": ["psychiatry", "neurology", "pain"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_040",
+    "category": "safety_update_required",
+    "example_clause": "Cardiac safety monitoring will include 12-lead ECG at baseline and Week 12.",
+    "amendment": "Add cardiac troponin I and BNP measurements at baseline, Week 4, Week 8, and Week 12; add Holter monitoring at baseline and Week 12; implement cardiac stopping rules for troponin elevation >2×ULN.",
+    "root_cause": "An unexpected MACE event cluster (3 cases of acute myocardial infarction) was identified in a concurrent trial arm during DSMB interim review; the safety monitoring committee recommended enhanced cardiac surveillance across all active studies of this compound class.",
+    "therapeutic_areas": ["cardiology", "oncology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_041",
+    "category": "safety_update_required",
+    "example_clause": "Pregnancy testing is required at screening for women of childbearing potential.",
+    "amendment": "Add monthly pregnancy testing throughout the treatment period and at 30-day follow-up; strengthen contraception requirements to dual-method highly effective contraception; update the embryo-fetal risk section of informed consent based on new animal reproductive toxicology findings.",
+    "root_cause": "Repeat-dose animal reproductive toxicology studies completed after protocol finalization revealed embryo-fetal toxicity at exposures 3× the human therapeutic dose; ICH M3(R2) and FDA guidance require protocol update and strengthened pregnancy risk mitigation.",
+    "therapeutic_areas": ["oncology", "rheumatology", "immunology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_042",
+    "category": "safety_update_required",
+    "example_clause": "Serious adverse events will be reported to the sponsor within 7 calendar days of site awareness.",
+    "amendment": "Reduce SAE reporting timeline to 24 hours for fatal or life-threatening events; add expedited reporting pathway for predefined adverse events of special interest (AESI); implement automated safety signal detection via EDC system.",
+    "root_cause": "A fatality in a concurrent cohort was reported on Day 7 of the 7-day window; FDA issued a clinical hold query citing late SAE reporting; the agency requested protocol revision to align with 21 CFR 312.32(c) expedited reporting requirements.",
+    "therapeutic_areas": ["oncology", "cardiology", "neurology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_043",
+    "category": "operational_other",
+    "example_clause": "Randomization will be performed using a centralized interactive voice response system (IVRS).",
+    "amendment": "Upgrade randomization system from IVRS to an integrated interactive web response system (IWRS) with real-time stratification by site, region, and baseline severity; decommission legacy IVRS infrastructure.",
+    "root_cause": "The legacy IVRS vendor notified the sponsor of system end-of-life; IWRS provides audit trail integrity required by FDA 21 CFR Part 11; the upgrade also enables real-time enrollment analytics and blinded site performance dashboards.",
+    "therapeutic_areas": ["oncology", "cardiology", "diabetes", "rheumatology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_044",
+    "category": "operational_other",
+    "example_clause": "Central laboratory testing will be performed by a single designated laboratory in the United States.",
+    "amendment": "Add two regional central laboratories (EU and APAC) with harmonized assay methods and cross-validated reference ranges to support the expanded international site network.",
+    "root_cause": "Shipping frozen samples from APAC sites to the US central lab required 48–72 hours on dry ice; freeze-thaw validation data showed unacceptable analyte degradation for the fibrinogen and biomarker panel; regional labs eliminate cold-chain variability.",
+    "therapeutic_areas": ["oncology", "hematology", "cardiology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_045",
+    "category": "operational_other",
+    "example_clause": "The study drug will be supplied as a 10 mg tablet for oral administration.",
+    "amendment": "Add a 5 mg tablet strength to support dose reduction management; update dose modification tables and pharmacy dispensing instructions accordingly.",
+    "root_cause": "Dose modification guidance required halving the 10 mg tablet for Grade 2 toxicity management; pill splitting produced inconsistent doses and patient confusion; tablet splitting is explicitly discouraged in the IB based on modified-release coating integrity data.",
+    "therapeutic_areas": ["oncology", "rheumatology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_046",
+    "category": "operational_other",
+    "example_clause": "Informed consent must be obtained using the sponsor-approved paper consent form only.",
+    "amendment": "Permit eConsent platforms (sponsor-approved) as an alternative to paper consent; allow remote eConsent for re-consent of previously enrolled patients for protocol amendments.",
+    "root_cause": "Paper consent created logistical barriers for patients consenting remotely during COVID-19 restrictions; 14 sites in 6 countries requested eConsent authorization; FDA and EMA have issued guidance endorsing electronic informed consent under 21 CFR Part 11.",
+    "therapeutic_areas": ["oncology", "diabetes", "cardiology", "rheumatology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_047",
+    "category": "operational_other",
+    "example_clause": "Study sites are limited to academic medical centers with dedicated research units.",
+    "amendment": "Expand eligible site types to include community oncology practices and outpatient specialty clinics meeting minimum infrastructure requirements; add a site qualification checklist and remote monitoring capability.",
+    "root_cause": "Restricting enrollment to academic centers created geographic access inequities; patient advocacy groups raised concerns about underrepresentation of rural and minority populations; community sites represent 60% of the real-world patient population.",
+    "therapeutic_areas": ["oncology", "hematology", "diabetes"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_048",
+    "category": "operational_other",
+    "example_clause": "The target enrollment is 200 patients across 15 study sites in the United States.",
+    "amendment": "Expand enrollment target to 320 patients; add 12 new sites in the European Union and Canada; increase sample size based on revised power calculation using updated placebo response rate estimate.",
+    "root_cause": "Interim futility analysis revealed placebo response rate of 22% versus the assumed 12%; recalculation to maintain 90% power at alpha=0.05 requires 310 evaluable patients; US enrollment alone cannot achieve the revised target within the planned timeline.",
+    "therapeutic_areas": ["psychiatry", "neurology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_049",
+    "category": "operational_other",
+    "example_clause": "All protocol-required imaging will be assessed locally by the site radiologist.",
+    "amendment": "Implement blinded independent central review (BICR) of all protocol-required imaging using a designated imaging CRO; retain local read for immediate clinical management decisions.",
+    "root_cause": "FDA's oncology guidance and recent Complete Response Letters have made BICR a de facto requirement for response-based primary endpoints; local reads in two Phase 2 studies of this compound showed 18% discordance with blinded central review.",
+    "therapeutic_areas": ["oncology"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  },
+  {
+    "pattern_id": "AMD_050",
+    "category": "operational_other",
+    "example_clause": "Data management and statistical analysis will be performed using the original statistical analysis plan (SAP) submitted at study initiation.",
+    "amendment": "Issue SAP Amendment v2.0 to pre-specify handling of missing data using multiple imputation, update the hierarchical testing strategy to control family-wise Type I error for two additional key secondary endpoints, and add a pre-specified interim efficacy analysis at 50% information fraction.",
+    "root_cause": "Regulatory agency feedback during the Type B meeting requested pre-specified missing data methodology per ICH E9(R1) addendum; the original SAP used last observation carried forward (LOCF), which FDA has indicated is insufficient for the indication; the interim analysis was added following DSMB recommendation.",
+    "therapeutic_areas": ["oncology", "cardiology", "diabetes"],
+    "source": "Synthetic, modeled on Tufts CSDD amendment categories"
+  }
+]

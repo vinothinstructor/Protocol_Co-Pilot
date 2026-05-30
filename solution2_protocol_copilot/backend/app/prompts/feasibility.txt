@@ -1,0 +1,27 @@
+You are a clinical trial feasibility expert. Given the current state of a Phase III diabetes protocol, project the operational metrics below.
+
+PROTOCOL OVERVIEW:
+{protocol_title}
+Therapeutic area: {therapeutic_area}
+Target countries: {target_countries}
+Current amendment risk score: {overall_risk}% (baseline was {overall_risk_baseline}%)
+
+KEY MATCHED AMENDMENT PATTERNS:
+{patterns_json}
+
+TASK:
+Based on the protocol clauses and matched amendment patterns, estimate the following four operational metrics for the CURRENT protocol state:
+
+1. screen_failure_rate — percentage of screened patients who will fail inclusion/exclusion criteria. Typical Phase III range: 25-50%.
+2. sites_required — number of investigator sites needed to enroll the target population within the planned timeline. Base on ~300 patients target.
+3. time_to_lsi_weeks — weeks from first patient enrolled to last patient enrolled (time to last subject in). Typical Phase III: 24-52 weeks.
+4. enrollment_cost_savings_usd_m — estimated savings in USD millions vs. a fully unrestricted baseline protocol, driven by reduced screen failures and faster enrollment. Range: $0M to $3M.
+
+Respond ONLY with valid JSON in this exact schema (no prose, no markdown fences):
+{{
+  "screen_failure_rate": <float>,
+  "sites_required": <float>,
+  "time_to_lsi_weeks": <float>,
+  "enrollment_cost_savings_usd_m": <float>,
+  "rationale": "<one paragraph explanation grounded in the matched patterns>"
+}}

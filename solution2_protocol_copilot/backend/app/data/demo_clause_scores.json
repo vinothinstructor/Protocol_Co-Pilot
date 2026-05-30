@@ -1,0 +1,320 @@
+{
+  "_comment": "Scripted demo scores. Overall formula: round(n_high*18 + n_medium*3 + n_low//3). 3H/5M/12L → 73. Post-fix (0H/5M/12L) → 19 (~18%).",
+  "_arc": {
+    "overall_pre_fix": 73,
+    "overall_post_fix": 19,
+    "severity_counts": {"high": 3, "medium": 5, "low": 12}
+  },
+  "blk_4_4": {
+    "score": 88,
+    "risk_level": "high",
+    "factors": {
+      "pattern_match_strength": {"score": 92, "reasoning": "Near-exact match to AMD_001: drug-naïve inclusion criterion causing >70% screen failure in T2DM trials."},
+      "therapeutic_area_fit": {"score": 85, "reasoning": "T2DM patients are almost universally initiated on metformin at diagnosis; truly drug-naïve adults are rare in the target age range."},
+      "operational_complexity": {"score": 30, "reasoning": "Standard screening procedure; no additional testing required beyond the routine HbA1c and medication history."},
+      "inclusion_restrictiveness": {"score": 95, "reasoning": "Eliminates the vast majority of the T2DM population who have received at least one OAD; most Phase III sites report <5% of screened T2DM patients are genuinely drug-naïve."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No PRO or QoL instrument referenced in this clause."},
+      "visit_burden": {"score": 10, "reasoning": "Not a visit-schedule clause; no impact on visit frequency or patient burden."}
+    },
+    "top_pattern_match": {
+      "pattern_id": "AMD_001",
+      "match_percent": 92,
+      "description": "Inclusion too restrictive — drug-naïve requirement causing >70% screen failure"
+    },
+    "summary": "The drug-naïve requirement will likely cause excessive screen failures; T2DM patients are almost universally on at least one OAD at diagnosis."
+  },
+  "blk_4_3": {
+    "score": 82,
+    "risk_level": "high",
+    "factors": {
+      "pattern_match_strength": {"score": 88, "reasoning": "Strong match to AMD_002: BMI < 35 kg/m² threshold excludes the majority of obese T2DM patients, particularly in US and Brazil."},
+      "therapeutic_area_fit": {"score": 78, "reasoning": "T2DM is strongly associated with obesity; WHO obesity class II (BMI 35-39.9) and class III (≥40) are overrepresented in the target population."},
+      "operational_complexity": {"score": 20, "reasoning": "BMI is a routine screening measurement; no operational complexity."},
+      "inclusion_restrictiveness": {"score": 90, "reasoning": "BMI < 35 excludes approximately 45% of screened T2DM patients in US and Brazilian sites where obesity prevalence is highest, making global enrollment targets unachievable."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 5, "reasoning": "Not a visit-related clause."}
+    },
+    "top_pattern_match": {
+      "pattern_id": "AMD_002",
+      "match_percent": 88,
+      "description": "BMI threshold too restrictive — excludes majority of obese T2DM population"
+    },
+    "summary": "BMI < 35 kg/m² eliminates approximately 45% of the intended T2DM population in high-enrollment US and Brazil sites."
+  },
+  "blk_6_2": {
+    "score": 78,
+    "risk_level": "high",
+    "factors": {
+      "pattern_match_strength": {"score": 85, "reasoning": "Strong match to AMD_031: weekly clinic visits throughout a 24-week treatment period — one of the most common causes of dropout in insulin trials."},
+      "therapeutic_area_fit": {"score": 60, "reasoning": "Weekly visits are atypical for a 24-week maintenance insulin titration study; standard practice is biweekly after initial stabilization."},
+      "operational_complexity": {"score": 85, "reasoning": "24 mandatory clinic visits per patient requires substantial site staffing and patient logistics; sites in Japan and Brazil flagged access constraints for working patients."},
+      "inclusion_restrictiveness": {"score": 15, "reasoning": "Not an eligibility criterion, but functionally restricts participation to patients with reliable transport and flexible schedules."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 95, "reasoning": "24 weekly clinic visits is 3-4× the typical burden for a Phase III insulin trial; comparable trials use biweekly visits after Week 4-8."}
+    },
+    "top_pattern_match": {
+      "pattern_id": "AMD_031",
+      "match_percent": 85,
+      "description": "Visit schedule too burdensome — weekly clinic visits for 24 weeks cause excessive dropout"
+    },
+    "summary": "Weekly clinic visits for 24 consecutive weeks will drive dropout; comparable T2DM trials use biweekly visits after initial titration stabilization."
+  },
+  "blk_5_6": {
+    "score": 52,
+    "risk_level": "medium",
+    "factors": {
+      "pattern_match_strength": {"score": 68, "reasoning": "Partial match to AMD_011: hepatic exclusion at 3×ULN is appropriate for hepatotoxic drugs but may be misaligned with NASH/NAFLD comorbidity prevalence in T2DM."},
+      "therapeutic_area_fit": {"score": 40, "reasoning": "NASH/NAFLD co-occurrence in T2DM is 55-75%; the 3×ULN threshold may exclude a clinically meaningful subgroup for whom the drug could be beneficial."},
+      "operational_complexity": {"score": 25, "reasoning": "Standard liver function testing; no additional operational complexity."},
+      "inclusion_restrictiveness": {"score": 55, "reasoning": "The Child-Pugh C or ALT/AST >3×ULN exclusion is more permissive than some prior drafts but still excludes T2DM patients with common metabolic liver disease."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not a visit-related clause."}
+    },
+    "top_pattern_match": {
+      "pattern_id": "AMD_011",
+      "match_percent": 68,
+      "description": "Hepatic exclusion threshold may be too conservative for NASH/NAFLD-prevalent T2DM population"
+    },
+    "summary": "Hepatic exclusion at 3×ULN may exclude a significant T2DM/NASH overlap population; consider raising to 5×ULN if the compound has no hepatotoxicity signal."
+  },
+  "blk_6_3": {
+    "score": 48,
+    "risk_level": "medium",
+    "factors": {
+      "pattern_match_strength": {"score": 72, "reasoning": "Direct match to AMD_032: ±3 calendar day visit window is the most restrictive in current guidelines and routinely drives protocol deviations in global trials."},
+      "therapeutic_area_fit": {"score": 40, "reasoning": "Insulin titration studies typically allow ±5-7 day windows after the first 4 weeks; ±3 days is appropriate only for PK-intensive periods."},
+      "operational_complexity": {"score": 55, "reasoning": "Strict ±3-day window requires coordinated scheduling across 60+ sites in 6 countries with different public holiday calendars and healthcare access patterns."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 65, "reasoning": "Narrow ±3-day window substantially increases patient burden; real-world scheduling in JP and BR often requires 5-7 day flexibility."}
+    },
+    "top_pattern_match": {
+      "pattern_id": "AMD_032",
+      "match_percent": 72,
+      "description": "Visit window ±3 days too narrow — common source of protocol deviations in multinational trials"
+    },
+    "summary": "A ±3-day visit window in a 60-site, 6-country trial is a common source of protocol deviations; ±5-7 days is the multinational standard after Week 8."
+  },
+  "blk_5_3": {
+    "score": 45,
+    "risk_level": "medium",
+    "factors": {
+      "pattern_match_strength": {"score": 62, "reasoning": "Partial match to AMD_012: CV event exclusion within 6 months is the regulatory default but may be over-conservative for a basal insulin with no cardiac liability."},
+      "therapeutic_area_fit": {"score": 45, "reasoning": "T2DM patients with recent CV events represent the highest-risk, highest-need subgroup; excluding them limits generalizability."},
+      "operational_complexity": {"score": 15, "reasoning": "Standard medical history review; no additional burden."},
+      "inclusion_restrictiveness": {"score": 60, "reasoning": "6-month MACE exclusion eliminates ~12% of T2DM patients at Phase III-eligible sites; FDA guidance allows 3-month exclusion for insulin products with no cardiac signal."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": {
+      "pattern_id": "AMD_012",
+      "match_percent": 62,
+      "description": "CV event exclusion window may be overly conservative for a metabolic compound"
+    },
+    "summary": "The 6-month MACE exclusion window exceeds FDA guidance for metabolic compounds; consider reducing to 3 months to improve enrollment feasibility."
+  },
+  "blk_3_4": {
+    "score": 44,
+    "risk_level": "medium",
+    "factors": {
+      "pattern_match_strength": {"score": 78, "reasoning": "Strong match to AMD_021: QoL_12 is not validated in Chinese (zh) or Brazilian Portuguese (pt), yet the protocol includes CN and BR as target countries."},
+      "therapeutic_area_fit": {"score": 15, "reasoning": "HbA1c, CGM, and SMBG endpoints are appropriate for T2DM; QoL_12 is a reasonable exploratory endpoint but the language gap is the risk."},
+      "operational_complexity": {"score": 25, "reasoning": "CGM sub-study adds logistical complexity at selected sites; QoL_12 translation gap will require either a validation study or instrument substitution."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 95, "reasoning": "QoL_12 is validated in en, es, fr, de, ja — but NOT in zh or pt. The protocol targets CN (requires zh) and BR (requires pt). ICH E9(R1) mandates validated translations for PRO instruments in all target country languages."},
+      "visit_burden": {"score": 10, "reasoning": "QoL_12 is administered at baseline and Week 24 only; minimal additional burden."}
+    },
+    "top_pattern_match": {
+      "pattern_id": "AMD_021",
+      "match_percent": 78,
+      "description": "QoL_12 not validated in Chinese or Brazilian Portuguese — ICH E9(R1) compliance gap"
+    },
+    "summary": "QoL_12 lacks validated translations for Chinese (CN site) and Brazilian Portuguese (BR site); use EQ-5D-5L or validate QoL_12 in zh and pt before study start."
+  },
+  "blk_5_5": {
+    "score": 35,
+    "risk_level": "medium",
+    "factors": {
+      "pattern_match_strength": {"score": 52, "reasoning": "Partial match to AMD_014: corticosteroid exclusion threshold of >10 mg/day prednisone equivalent for >7 days is clinically defensible but may require amendment if patients use short burst courses."},
+      "therapeutic_area_fit": {"score": 35, "reasoning": "Short-course corticosteroids for comorbidities (e.g., asthma, gout flares) are common in T2DM patients; the 7-day window may inadvertently exclude patients on legitimate short-burst regimens."},
+      "operational_complexity": {"score": 20, "reasoning": "Standard medication history; no additional complexity."},
+      "inclusion_restrictiveness": {"score": 45, "reasoning": "Corticosteroid use for >7 consecutive days at >10 mg/day prednisone equivalent within 3 months is not uncommon in T2DM patients managing comorbid inflammatory conditions."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": {
+      "pattern_id": "AMD_014",
+      "match_percent": 52,
+      "description": "Corticosteroid exclusion threshold may produce unexpected screen failures in comorbid population"
+    },
+    "summary": "Corticosteroid exclusion is clinically appropriate but the 7-day/10 mg threshold may need clarification for intermittent burst regimens common in comorbid T2DM."
+  },
+  "blk_4_1": {
+    "score": 12,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 18, "reasoning": "Weak match to historical patterns; age 18-65 is standard for Phase III T2DM trials."},
+      "therapeutic_area_fit": {"score": 15, "reasoning": "Age range appropriate for the T2DM target population; some sites flagged exclusion of elderly (>65) but this is a known trial design choice."},
+      "operational_complexity": {"score": 5, "reasoning": "Standard age verification at screening."},
+      "inclusion_restrictiveness": {"score": 10, "reasoning": "Age 18-65 is standard; minor risk of excluding elderly T2DM patients with the highest unmet need."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard age eligibility for a Phase III T2DM trial; low amendment risk."
+  },
+  "blk_4_2": {
+    "score": 17,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 22, "reasoning": "Weak match; HbA1c 7.5-10% is the standard glycemic eligibility window for Phase III insulin trials."},
+      "therapeutic_area_fit": {"score": 20, "reasoning": "HbA1c window aligns with FDA guidance for T2DM inadequate control studies."},
+      "operational_complexity": {"score": 5, "reasoning": "Standard central laboratory HbA1c testing."},
+      "inclusion_restrictiveness": {"score": 20, "reasoning": "Window may exclude very high (>10%) or borderline (7-7.5%) patients but is aligned with regulatory precedent."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard HbA1c eligibility window consistent with FDA guidance and Phase III precedent; low amendment risk."
+  },
+  "blk_5_1": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 8, "reasoning": "No strong pattern match; Type 1 DM exclusion is standard for insulin T2DM trials."},
+      "therapeutic_area_fit": {"score": 10, "reasoning": "Anti-GAD65/IA-2 antibody testing adds specificity; appropriate for distinguishing LADA from T2DM."},
+      "operational_complexity": {"score": 10, "reasoning": "Antibody testing requires central laboratory and adds cost; however, this is standard for insulin-naïve T2DM trials."},
+      "inclusion_restrictiveness": {"score": 5, "reasoning": "Correct exclusion for the study population."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard Type 1 DM and LADA exclusion for an insulin T2DM trial; no amendment risk anticipated."
+  },
+  "blk_5_2": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 10, "reasoning": "Weak match; eGFR <30 severe renal impairment exclusion is the FDA-standard threshold for insulin trials."},
+      "therapeutic_area_fit": {"score": 10, "reasoning": "Appropriate exclusion; insulin dosing in severe CKD carries hypoglycemia risk warranting exclusion."},
+      "operational_complexity": {"score": 5, "reasoning": "Standard creatinine/eGFR assessment at screening."},
+      "inclusion_restrictiveness": {"score": 8, "reasoning": "Excludes only the most severe renal impairment; appropriate."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard renal safety exclusion; eGFR <30 threshold aligns with FDA labeling precedent for basal insulin."
+  },
+  "blk_5_4": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 5, "reasoning": "No match; pregnancy/breastfeeding exclusion is universally required."},
+      "therapeutic_area_fit": {"score": 8, "reasoning": "Appropriate standard exclusion with required contraception documentation."},
+      "operational_complexity": {"score": 8, "reasoning": "Routine urine/serum pregnancy test and contraception counseling at screening."},
+      "inclusion_restrictiveness": {"score": 5, "reasoning": "Standard exclusion."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard pregnancy/breastfeeding exclusion; no amendment risk."
+  },
+  "blk_6_1": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 8, "reasoning": "No significant pattern match; screening visit with standard procedures."},
+      "therapeutic_area_fit": {"score": 10, "reasoning": "Comprehensive screening battery appropriate for T2DM insulin trial."},
+      "operational_complexity": {"score": 15, "reasoning": "CGM sub-study device fitting adds minor site complexity; otherwise standard."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No PRO instrument administered at screening."},
+      "visit_burden": {"score": 5, "reasoning": "Standard screening visit; 14-day window is appropriate."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard screening visit structure; no amendment risk anticipated."
+  },
+  "blk_3_3": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 10, "reasoning": "Weak match; standard secondary objectives for a T2DM insulin trial."},
+      "therapeutic_area_fit": {"score": 12, "reasoning": "HbA1c <7.0% target, nocturnal hypoglycemia, FPG, and ITSQ are standard for the indication."},
+      "operational_complexity": {"score": 10, "reasoning": "ITSQ requires validated translations; ITSQ is not validated in zh or pt, similar to QoL_12. However, it is an exploratory endpoint and the risk is lower."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 15, "reasoning": "ITSQ validation status in zh/pt should be confirmed; however, ITSQ is a secondary endpoint and the risk is lower than a primary PRO."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard secondary objectives; ITSQ validation should be confirmed for CN and BR sites but risk is low at the secondary level."
+  },
+  "blk_7_2": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 10, "reasoning": "Weak match; structured titration algorithm is standard for basal insulin trials."},
+      "therapeutic_area_fit": {"score": 12, "reasoning": "Titration from 10 units with 2-unit increments every 3 days is consistent with glargine prescribing information."},
+      "operational_complexity": {"score": 15, "reasoning": "Double-dummy blinding with identical device appearance adds minor complexity; otherwise standard."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 5, "reasoning": "Weekly titration visits are related to blk_6_2; this clause describes the algorithm, not the schedule."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard basal insulin titration algorithm; no amendment risk anticipated."
+  },
+  "blk_8_1": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 8, "reasoning": "No significant pattern match; sample size calculation is standard."},
+      "therapeutic_area_fit": {"score": 10, "reasoning": "Sample size powered at 90% for −0.30% HbA1c difference is aligned with Phase II data."},
+      "operational_complexity": {"score": 5, "reasoning": "Standard statistical planning."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Sample size and power calculations are appropriate; no amendment risk."
+  },
+  "blk_8_3": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 8, "reasoning": "No significant match; hierarchical testing for key secondary endpoints is standard."},
+      "therapeutic_area_fit": {"score": 10, "reasoning": "Hierarchical testing order is clinically logical for a T2DM insulin trial."},
+      "operational_complexity": {"score": 5, "reasoning": "Standard statistical analysis."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard hierarchical testing procedure; no amendment risk."
+  },
+  "blk_9_1": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 10, "reasoning": "Weak match; AE/SAE definitions and hypoglycemia classification are standard for T2DM trials."},
+      "therapeutic_area_fit": {"score": 12, "reasoning": "ADA/EASD 2021 hypoglycemia grading (Level 1/2/3) is current best practice."},
+      "operational_complexity": {"score": 10, "reasoning": "MedDRA coding and CTCAE grading require trained staff at all sites."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Standard AE/SAE definitions using current ADA classification; no amendment risk."
+  },
+  "blk_9_3": {
+    "score": 7,
+    "risk_level": "low",
+    "factors": {
+      "pattern_match_strength": {"score": 10, "reasoning": "Weak match; DSMB charter with pre-specified stopping rules is regulatory standard."},
+      "therapeutic_area_fit": {"score": 10, "reasoning": "DSMB reviews at 30/60/90% enrollment are appropriate for a Phase III hypoglycemia-risk trial."},
+      "operational_complexity": {"score": 12, "reasoning": "DSMB requires independent statistical programming and unblinded data packages."},
+      "inclusion_restrictiveness": {"score": 0, "reasoning": "Not an eligibility criterion."},
+      "endpoint_instrument_validation": {"score": 0, "reasoning": "No instrument referenced."},
+      "visit_burden": {"score": 0, "reasoning": "Not visit-related."}
+    },
+    "top_pattern_match": null,
+    "summary": "Appropriate DSMB charter and review frequency for a Phase III insulin trial; no amendment risk."
+  }
+}

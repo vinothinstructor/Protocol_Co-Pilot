@@ -1,0 +1,49 @@
+- instrument_id: QoL_12
+  name: 12-item Quality-of-Life Questionnaire
+  validated_languages: [en, es, fr, de, ja]
+  notes: Not validated in zh, pt — common localization gap
+
+- instrument_id: EQ-5D-5L
+  name: EuroQol 5-Dimension 5-Level
+  validated_languages: [en, es, fr, de, ja, zh, pt, ko, it, nl]
+  notes: Gold-standard generic HRQoL instrument; validated across 170+ languages
+
+- instrument_id: SF-36
+  name: 36-Item Short Form Health Survey (SF-36v2)
+  validated_languages: [en, es, fr, de, ja, zh, pt, it, nl, ko]
+  notes: Widely validated but requires license; Portuguese validation covers Brazilian-Portuguese
+
+- instrument_id: PHQ-9
+  name: Patient Health Questionnaire-9 (Depression Scale)
+  validated_languages: [en, es, fr, de, ja, zh, pt, ko, it, ar]
+  notes: Free to use; validated in primary care and endocrinology settings
+
+- instrument_id: ITSQ
+  name: Insulin Treatment Satisfaction Questionnaire
+  validated_languages: [en, de, fr, es, ja]
+  notes: Diabetes-specific; not validated in zh or pt — flag for global trials
+
+- instrument_id: HbA1c_NGSP
+  name: HbA1c Lab Assay (NGSP/IFCC-certified HPLC)
+  validated_languages: [en]
+  notes: Laboratory assay, not PRO; NGSP certification required at all central labs
+
+- instrument_id: SMBG_7pt
+  name: 7-Point Self-Monitored Blood Glucose Profile
+  validated_languages: [en, es, fr, de, ja, zh, pt]
+  notes: Device-agnostic; requires validated glucometer supplied by sponsor
+
+- instrument_id: DTSQ
+  name: Diabetes Treatment Satisfaction Questionnaire (Status Version)
+  validated_languages: [en, de, fr, es, ja, zh, pt, ko]
+  notes: Validated in T2DM populations; available from Prof. Clare Bradley (Royalty Holloway, free for academic use)
+
+- instrument_id: PAID-5
+  name: Problem Areas in Diabetes Scale (5-item)
+  validated_languages: [en, es, fr, de, nl, pt]
+  notes: Short diabetes distress screen; not validated in zh or ja — use PAID-20 for Asian-Pacific sites
+
+- instrument_id: CGM_Metrics
+  name: Continuous Glucose Monitoring Derived Metrics (TIR, TAR, TBR)
+  validated_languages: [en]
+  notes: Device output, not PRO; follows ATTD 2019 consensus targets; use FDA-cleared CGM devices only at sub-study sites

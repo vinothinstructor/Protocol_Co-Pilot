@@ -1,0 +1,305 @@
+{
+  "_arc_math": {
+    "formula": "round(n_high*18 + n_medium*3 + min(n_low,12)//3)",
+    "start": "3H/5M/12L → 73",
+    "after_fix1_drug_naive": "2H/5M/13L → 55  (delta -18)",
+    "after_fix2_bmi": "1H/5M/14L → 37  (delta -18)",
+    "after_fix3_weekly": "0H/5M/15L → 19  (delta -18)",
+    "note": "delta_overall=-18 for top candidate of each HIGH clause. MEDIUM fixes: delta=-3 each."
+  },
+  "_text_patterns": {
+    "qol_native_language": {
+      "_note": "Triggered by clauses containing both 'questionnaire' and 'native language' — typically the QoL/Mandarin demo clause typed in empty space.",
+      "match_keywords": [
+        "questionnaire",
+        "native language"
+      ],
+      "match_all_required": true,
+      "candidates": [
+        {
+          "candidate_id": "qol_fix_1",
+          "label": "Restrict to validated languages only",
+          "new_text": "Patient must complete the 12-item Quality-of-Life questionnaire in English, German, French, Japanese, or Spanish at every visit. Sites where these languages are not the native language must arrange certified translation services.",
+          "delta_overall": -3,
+          "delta_clause_score": -40,
+          "new_clause_level": "low",
+          "rationale": "Restricting to languages where QoL_12 is already validated removes the regulatory submission risk for non-validated translations in CN and BR."
+        },
+        {
+          "candidate_id": "qol_fix_2",
+          "label": "Use validated alternative instrument",
+          "new_text": "Patient must complete the EQ-5D-5L Quality-of-Life questionnaire in their native language at every visit. (EQ-5D-5L is validated in all target country languages including Mandarin and Portuguese.)",
+          "delta_overall": -3,
+          "delta_clause_score": -50,
+          "new_clause_level": "low",
+          "rationale": "EQ-5D-5L is a widely-accepted PRO instrument with full multilingual validation including zh-CN and pt-BR. Switching avoids translation-validation overhead while preserving the QoL endpoint."
+        },
+        {
+          "candidate_id": "qol_fix_3",
+          "label": "Initiate ICH-aligned translation validation",
+          "new_text": "Patient must complete the 12-item Quality-of-Life questionnaire in their native language at every visit. Mandarin (zh-CN) and Portuguese (pt-BR) translations will undergo ICH-compliant linguistic validation prior to first patient enrolled in CN and BR sites.",
+          "delta_overall": -2,
+          "delta_clause_score": -30,
+          "new_clause_level": "low",
+          "rationale": "Preserves the original instrument but adds a validation gate. Adds 8–12 weeks to CN/BR site activation but is the most rigorous option."
+        }
+      ]
+    }
+  },
+  "blk_4_4": {
+    "original": "Be drug-naïve at screening, with no prior antidiabetic agents of any kind.",
+    "candidates": [
+      {
+        "candidate_id": "blk_4_4_fix_1",
+        "label": "Allow stable metformin",
+        "new_text": "Be either drug-naïve or on a stable dose of metformin monotherapy (≥1500 mg/day for ≥12 weeks prior to screening), with no other antidiabetic agents.",
+        "delta_overall": -18,
+        "delta_clause_score": -70,
+        "new_clause_level": "low",
+        "rationale": "Metformin is first-line for T2DM and present in the vast majority of newly diagnosed patients. Allowing stable metformin preserves a meaningful insulin-naïve population for the experimental arm while making enrollment feasible — Tufts CSDD data show drug-naïve requirements cause >70% screen failure in T2DM Phase III studies."
+      },
+      {
+        "candidate_id": "blk_4_4_fix_2",
+        "label": "Allow one prior oral agent",
+        "new_text": "Have received no more than one prior oral antidiabetic agent at screening, with a washout period of at least 4 weeks prior to randomization.",
+        "delta_overall": -15,
+        "delta_clause_score": -60,
+        "new_clause_level": "low",
+        "rationale": "A defined washout allows patients on standard first-line therapy to participate. Slightly broadens the eligible population beyond metformin-only users, improving enrollment velocity while maintaining a relatively treatment-naïve population for the primary analysis."
+      },
+      {
+        "candidate_id": "blk_4_4_fix_3",
+        "label": "Remove drug-naïve requirement",
+        "new_text": "Have a confirmed diagnosis of Type 2 Diabetes Mellitus with HbA1c between 7.5% and 10.0% at screening, with no restriction on prior antidiabetic agents provided all OADs are discontinued at randomization.",
+        "delta_overall": -12,
+        "delta_clause_score": -75,
+        "new_clause_level": "low",
+        "rationale": "Maximally permissive criterion focused on glycemic status rather than treatment history. Eliminates population-specificity; the statistical analysis plan would need to stratify by prior therapy to maintain interpretability of the primary endpoint."
+      }
+    ]
+  },
+  "blk_4_3": {
+    "original": "Have a body mass index (BMI) below 35 kg/m².",
+    "candidates": [
+      {
+        "candidate_id": "blk_4_3_fix_1",
+        "label": "Widen BMI to ≤40 kg/m²",
+        "new_text": "Have a body mass index (BMI) of 40 kg/m² or less at screening.",
+        "delta_overall": -18,
+        "delta_clause_score": -65,
+        "new_clause_level": "low",
+        "rationale": "Widening the BMI upper bound to 40 kg/m² captures WHO obesity class II (BMI 35–39.9), which represents the dominant phenotype in the T2DM population — particularly in US and Brazil where obesity prevalence is highest. This change preserves the existing eligible population while opening enrollment to approximately 40% more candidates."
+      },
+      {
+        "candidate_id": "blk_4_3_fix_2",
+        "label": "Widen BMI to ≤42 kg/m²",
+        "new_text": "Have a body mass index (BMI) between 25 kg/m² and 42 kg/m² at screening, with waist circumference ≤130 cm in men and ≤115 cm in women.",
+        "delta_overall": -15,
+        "delta_clause_score": -55,
+        "new_clause_level": "low",
+        "rationale": "Extends eligibility further with an added waist-circumference guard to exclude patients with extreme central obesity, where the compound's dose-titration algorithm may require adjustment. Suitable for sites with high prevalence of abdominal obesity."
+      },
+      {
+        "candidate_id": "blk_4_3_fix_3",
+        "label": "Add BMI subgroup, keep original",
+        "new_text": "Have a body mass index (BMI) below 35 kg/m² at screening. Sites may additionally enroll up to 20% of their patients with BMI 35–40 kg/m² in a pre-specified exploratory subgroup, subject to sponsor approval.",
+        "delta_overall": -12,
+        "delta_clause_score": -40,
+        "new_clause_level": "low",
+        "rationale": "Conservative approach that retains the original eligibility criterion for the primary analysis while allowing exploratory enrollment above the BMI threshold. Avoids a full amendment scope but generates limited evidence on the higher-BMI population."
+      }
+    ]
+  },
+  "blk_6_2": {
+    "original": "Treatment Phase — Weekly Clinic Visits for 24 Weeks: Participants must attend clinic weekly throughout the 24-week double-blind treatment period (Weeks 1 through 24), at which time study drug will be dispensed, insulin dose titration will be performed per protocol algorithm, SMBG diaries will be reviewed, and adverse events and concomitant medications will be assessed.",
+    "candidates": [
+      {
+        "candidate_id": "blk_6_2_fix_1",
+        "label": "Biweekly after Week 8",
+        "new_text": "Treatment Phase — Visit Schedule: Participants must attend clinic weekly during the initial titration period (Weeks 1 through 8). Once fasting SMBG is stable (80–130 mg/dL for 3 consecutive measurements), visit frequency reduces to biweekly (Weeks 9 through 24). Study drug dispensing, titration review, SMBG diary review, and safety assessments occur at each visit.",
+        "delta_overall": -18,
+        "delta_clause_score": -60,
+        "new_clause_level": "low",
+        "rationale": "Weekly visits for 24 consecutive weeks is 3–4× the industry norm for basal insulin titration studies. Comparable Phase III trials use biweekly visits after initial dose stabilization. Reducing to biweekly after Week 8 halves the patient burden while preserving safety oversight during the critical titration period."
+      },
+      {
+        "candidate_id": "blk_6_2_fix_2",
+        "label": "Biweekly throughout",
+        "new_text": "Treatment Phase — Visit Schedule: Participants must attend clinic visits every two weeks (biweekly) throughout the 24-week double-blind treatment period. Between visits, insulin dose titration is performed via a structured telephone call at the intervening week, with SMBG diary transmission to the site nurse. Clinic visits include study drug dispensing, full safety assessment, and HbA1c at Weeks 12 and 24.",
+        "delta_overall": -15,
+        "delta_clause_score": -55,
+        "new_clause_level": "low",
+        "rationale": "Biweekly visits with an intervening phone-based titration call matches contemporary Phase III basal insulin trial design. The structured telephone contact maintains titration integrity without requiring full clinic attendance, significantly reducing patient burden and dropout risk."
+      },
+      {
+        "candidate_id": "blk_6_2_fix_3",
+        "label": "Monthly after Week 12 with telehealth",
+        "new_text": "Treatment Phase — Visit Schedule: Participants must attend clinic weekly during Weeks 1 through 4, biweekly during Weeks 5 through 12, and monthly during Weeks 13 through 24. Between monthly clinic visits, fortnightly telemedicine check-ins are conducted to review SMBG data and perform dose titration per algorithm.",
+        "delta_overall": -12,
+        "delta_clause_score": -50,
+        "new_clause_level": "low",
+        "rationale": "Graduated visit schedule aligned with the natural titration arc of basal insulin. Heavy monitoring in the early weeks transitions to lighter monthly clinic contact with telemedicine support, suitable for sites with strong digital health infrastructure."
+      }
+    ]
+  },
+  "blk_5_6": {
+    "original": "Have severe hepatic impairment, defined as Child-Pugh Class C (score ≥ 10), or alanine aminotransferase (ALT) or aspartate aminotransferase (AST) levels > 3× the upper limit of normal at screening.",
+    "candidates": [
+      {
+        "candidate_id": "blk_5_6_fix_1",
+        "label": "Raise transaminase threshold to 5× ULN",
+        "new_text": "Have severe hepatic impairment, defined as Child-Pugh Class C (score ≥ 10), or persistent ALT or AST elevation > 5× the upper limit of normal on two measurements at least 4 weeks apart prior to screening.",
+        "delta_overall": -3,
+        "delta_clause_score": -30,
+        "new_clause_level": "low",
+        "rationale": "The 3× ULN threshold is appropriate for hepatotoxic drugs but the investigational agent has no identified hepatic signal. NASH/NAFLD comorbidity — prevalent in 55–75% of the T2DM population — routinely causes transaminase elevations of 3–5× ULN. Raising to 5× ULN with a confirmatory repeat measurement aligns with FDA guidance for non-hepatotoxic agents."
+      },
+      {
+        "candidate_id": "blk_5_6_fix_2",
+        "label": "Child-Pugh C only (remove ALT/AST)",
+        "new_text": "Have severe hepatic impairment, defined as Child-Pugh Class C (score ≥ 10) at screening.",
+        "delta_overall": -2,
+        "delta_clause_score": -25,
+        "new_clause_level": "low",
+        "rationale": "Removes the transaminase threshold entirely, relying solely on Child-Pugh classification — a validated functional measure of hepatic reserve. Clinically, Child-Pugh C reliably identifies patients with clinically significant hepatic impairment without excluding the large NASH/NAFLD subpopulation."
+      },
+      {
+        "candidate_id": "blk_5_6_fix_3",
+        "label": "5× ULN with hepatologist review",
+        "new_text": "Have clinically significant hepatic impairment, defined as Child-Pugh Class C (score ≥ 10) OR ALT/AST > 5× ULN in conjunction with clinical symptoms of hepatic dysfunction, confirmed by hepatologist review at the site.",
+        "delta_overall": -2,
+        "delta_clause_score": -20,
+        "new_clause_level": "low",
+        "rationale": "Raises the transaminase threshold and adds a clinical gating step requiring hepatologist confirmation. Provides a higher safety bar for enrollment decisions while still allowing patients with isolated enzyme elevation to be assessed on a case-by-case basis."
+      }
+    ]
+  },
+  "blk_6_3": {
+    "original": "Visit Window: All scheduled visits must occur within ±3 calendar days of the target date. Visits falling outside this window without documented medical justification will be considered protocol deviations and reported to the sponsor.",
+    "candidates": [
+      {
+        "candidate_id": "blk_6_3_fix_1",
+        "label": "Widen window to ±7 days",
+        "new_text": "Visit Window: All scheduled visits must occur within ±7 calendar days of the target date for non-milestone visits (Weeks 1–23), and within ±3 calendar days for milestone visits (Week 12 and Week 24 assessments). Visits outside these windows without documented justification will be flagged as protocol deviations.",
+        "delta_overall": -3,
+        "delta_clause_score": -28,
+        "new_clause_level": "low",
+        "rationale": "±3 calendar days is the most restrictive visit window in current Phase III guidelines. A ±7 day window for non-critical visits aligns with ICH E6(R3) guidance and multinational trial practice, while preserving narrow windows only for the primary endpoint assessments."
+      },
+      {
+        "candidate_id": "blk_6_3_fix_2",
+        "label": "±5 days throughout",
+        "new_text": "Visit Window: All scheduled visits must occur within ±5 calendar days of the target date. Visits falling outside this window without documented medical justification will be considered protocol deviations and reported to the sponsor.",
+        "delta_overall": -2,
+        "delta_clause_score": -22,
+        "new_clause_level": "low",
+        "rationale": "A ±5-day window represents a conservative widening that accommodates typical public holiday and scheduling variability in the 6 target countries, without departing significantly from the original design intent."
+      },
+      {
+        "candidate_id": "blk_6_3_fix_3",
+        "label": "±5 days, waive for documented cause",
+        "new_text": "Visit Window: All scheduled visits should occur within ±5 calendar days of the target date. Visits outside this window are permissible with documented medical or logistical justification reviewed by the medical monitor, and will not automatically be counted as protocol deviations.",
+        "delta_overall": -2,
+        "delta_clause_score": -18,
+        "new_clause_level": "low",
+        "rationale": "Widens the window and adds flexibility for documented exceptions without requiring sponsor notification for every scheduling variation. Reduces administrative burden on sites while maintaining data quality through medical monitor oversight."
+      }
+    ]
+  },
+  "blk_5_3": {
+    "original": "Have experienced a major adverse cardiovascular event (MACE — myocardial infarction, stroke, or hospitalization for unstable angina) within 6 months prior to screening.",
+    "candidates": [
+      {
+        "candidate_id": "blk_5_3_fix_1",
+        "label": "Reduce to 3 months for MACE",
+        "new_text": "Have experienced a major adverse cardiovascular event (MACE — myocardial infarction, stroke, or hospitalization for unstable angina) within 3 months prior to screening.",
+        "delta_overall": -3,
+        "delta_clause_score": -22,
+        "new_clause_level": "low",
+        "rationale": "FDA guidance for metabolic compounds without a cardiac signal recommends a 3-month MACE exclusion window, not 6 months. Reducing to 3 months eliminates approximately 8–12% additional screen failures without meaningful safety compromise, as residual cardiovascular instability beyond 3 months is rare in an otherwise ambulatory population."
+      },
+      {
+        "candidate_id": "blk_5_3_fix_2",
+        "label": "3 months for MI, 6 months for stroke",
+        "new_text": "Have experienced a myocardial infarction or hospitalization for unstable angina within 3 months prior to screening, OR a stroke (ischemic or hemorrhagic) within 6 months prior to screening.",
+        "delta_overall": -2,
+        "delta_clause_score": -18,
+        "new_clause_level": "low",
+        "rationale": "Differentiates exclusion windows by event type, reflecting distinct recovery trajectories. MI/unstable angina patients are typically medically stable within 3 months; the longer 6-month window for stroke accommodates neurological recovery and functional assessment requirements."
+      },
+      {
+        "candidate_id": "blk_5_3_fix_3",
+        "label": "Add physician clearance pathway",
+        "new_text": "Have experienced a major adverse cardiovascular event (MACE — myocardial infarction, stroke, or hospitalization for unstable angina) within 3 months prior to screening, unless the patient has been assessed by a cardiologist as medically stable for study participation.",
+        "delta_overall": -2,
+        "delta_clause_score": -15,
+        "new_clause_level": "low",
+        "rationale": "Retains clinical oversight through cardiologist clearance while allowing enrollment of patients who have recovered well. Adds site workload but provides maximum flexibility for the investigators to exercise clinical judgment."
+      }
+    ]
+  },
+  "blk_3_4": {
+    "original": "Quality of life as assessed by the 12-item Quality-of-Life Questionnaire (QoL_12) at baseline and Week 24.",
+    "candidates": [
+      {
+        "candidate_id": "blk_3_4_fix_1",
+        "label": "Replace QoL_12 with EQ-5D-5L",
+        "new_text": "Quality of life as assessed by the EQ-5D-5L (EuroQol 5-Dimension 5-Level) instrument at baseline and Week 24, administered in validated local language translations across all study sites.",
+        "delta_overall": -3,
+        "delta_clause_score": -30,
+        "new_clause_level": "low",
+        "rationale": "EQ-5D-5L is validated in over 170 languages including Chinese (Simplified and Traditional) and Brazilian Portuguese, satisfying ICH E9(R1) requirements for all 6 target countries. QoL_12 lacks validated translations for zh and pt, creating a compliance gap at CN and BR sites. EQ-5D-5L is widely used in T2DM health economics research, strengthening the health technology assessment value dossier."
+      },
+      {
+        "candidate_id": "blk_3_4_fix_2",
+        "label": "EQ-5D-5L primary, QoL_12 secondary",
+        "new_text": "Quality of life as assessed by the EQ-5D-5L at baseline and Week 24 (all sites), supplemented by the 12-item Quality-of-Life Questionnaire (QoL_12) at baseline and Week 24 at US, EU, and Japan sites only (en, es, fr, de, ja validated languages).",
+        "delta_overall": -2,
+        "delta_clause_score": -25,
+        "new_clause_level": "low",
+        "rationale": "Preserves QoL_12 for direct comparability with earlier IQVIA studies at sites with validated translations, while adding EQ-5D-5L as the primary globally-compliant instrument. CN and BR sites use EQ-5D-5L only. Slightly increases site burden but maximizes data richness."
+      },
+      {
+        "candidate_id": "blk_3_4_fix_3",
+        "label": "Validate QoL_12 in zh and pt first",
+        "new_text": "Quality of life as assessed by the 12-item Quality-of-Life Questionnaire (QoL_12) at baseline and Week 24, using validated translations in all site languages. Validated zh (Simplified Chinese) and Brazilian Portuguese translations of QoL_12 must be obtained and regulatory-approved prior to initiation of CN and BR sites.",
+        "delta_overall": -2,
+        "delta_clause_score": -20,
+        "new_clause_level": "low",
+        "rationale": "Retains QoL_12 for cross-study comparability while resolving the ICH E9(R1) compliance gap through prospective validation. Requires a 6–9 month validation timeline and associated cost, which may delay CN and BR site activation."
+      }
+    ]
+  },
+  "blk_5_5": {
+    "original": "Be currently receiving systemic corticosteroids (equivalent to > 10 mg/day prednisone for > 7 consecutive days within 3 months prior to screening), immunosuppressive therapy, or any investigational drug within 30 days or 5 half-lives (whichever is longer) prior to screening.",
+    "candidates": [
+      {
+        "candidate_id": "blk_5_5_fix_1",
+        "label": "Require chronic use only",
+        "new_text": "Be currently receiving systemic corticosteroids as a chronic (> 30 consecutive days) regimen equivalent to > 10 mg/day prednisone, immunosuppressive therapy, or any investigational drug within 30 days or 5 half-lives (whichever is longer) prior to screening. Short-course corticosteroid regimens (≤ 30 days) for acute conditions are not exclusionary.",
+        "delta_overall": -3,
+        "delta_clause_score": -18,
+        "new_clause_level": "low",
+        "rationale": "Short-course corticosteroids for comorbid conditions (e.g., gout flares, asthma exacerbations, contact dermatitis) are common in the T2DM population and are unlikely to produce sustained glycemic interference. Restricting the exclusion to chronic use avoids unnecessary screen failures in this subgroup."
+      },
+      {
+        "candidate_id": "blk_5_5_fix_2",
+        "label": "Raise dose threshold to 20 mg/day",
+        "new_text": "Be currently receiving systemic corticosteroids equivalent to > 20 mg/day prednisone for > 14 consecutive days within 3 months prior to screening, immunosuppressive therapy, or any investigational drug within 30 days or 5 half-lives (whichever is longer) prior to screening.",
+        "delta_overall": -2,
+        "delta_clause_score": -14,
+        "new_clause_level": "low",
+        "rationale": "Raises both the dose threshold (10→20 mg/day) and duration (7→14 days), targeting only patients on sustained moderate-to-high dose systemic steroids likely to produce clinically meaningful glucocorticoid-induced hyperglycemia that could confound the primary endpoint."
+      },
+      {
+        "candidate_id": "blk_5_5_fix_3",
+        "label": "Exclude at-screening use only",
+        "new_text": "Be receiving systemic corticosteroids equivalent to > 10 mg/day prednisone at the time of screening. Historical corticosteroid use prior to screening is not exclusionary provided the patient has been off systemic corticosteroids for ≥ 4 weeks prior to the baseline visit.",
+        "delta_overall": -2,
+        "delta_clause_score": -12,
+        "new_clause_level": "low",
+        "rationale": "Simplifies the criterion to a point-in-time assessment at screening, removing the 3-month lookback window. The 4-week washout before baseline ensures no residual glycemic effect at randomization. Significantly reduces administrative complexity at sites."
+      }
+    ]
+  }
+}

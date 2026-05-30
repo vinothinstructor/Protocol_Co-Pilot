@@ -1,0 +1,262 @@
+{
+  "protocol_id": "DIABETES-2026-PH3",
+  "title": "A Phase III, Randomized, Double-Blind Study of IQV-Glargine-Plus vs Standard Insulin Therapy in Adults with Inadequately Controlled Type 2 Diabetes Mellitus",
+  "version": "v3.2",
+  "therapeutic_area": "diabetes",
+  "target_countries": ["US", "DE", "FR", "JP", "BR", "CN"],
+  "sections": [
+    {
+      "section_id": "sec_1",
+      "number": "1",
+      "heading": "Study Title & Synopsis",
+      "blocks": [
+        {
+          "block_id": "blk_1_1",
+          "type": "paragraph",
+          "text": "Full Title: A Phase III, Randomized, Double-Blind, Parallel-Group, Multicenter Study to Evaluate the Efficacy and Safety of IQV-Glargine-Plus Compared with Standard Basal Insulin Therapy in Adults with Inadequately Controlled Type 2 Diabetes Mellitus."
+        },
+        {
+          "block_id": "blk_1_2",
+          "type": "paragraph",
+          "text": "Short Title: CLARITY-T2D Phase III Study."
+        },
+        {
+          "block_id": "blk_1_3",
+          "type": "paragraph",
+          "text": "Sponsor: IQVIA Therapeutics, Inc. Protocol Number: IQV-2026-T2D-301. IND/CTA Number: IND 145-872 (US); pending registration in DE, FR, JP, BR, CN. EudraCT Number: 2025-006782-14."
+        },
+        {
+          "block_id": "blk_1_4",
+          "type": "paragraph",
+          "text": "Synopsis: This is a randomized, double-blind, parallel-group, multicenter Phase III study evaluating the superiority of IQV-Glargine-Plus versus insulin glargine U-100 (standard of care) in adults with Type 2 Diabetes Mellitus (T2DM) inadequately controlled on oral antidiabetic agents alone. Approximately 420 participants will be randomized 1:1 to receive either IQV-Glargine-Plus (experimental arm) or insulin glargine U-100 (comparator arm) for 24 weeks of double-blind treatment. The primary efficacy endpoint is the change from baseline in glycated hemoglobin (HbA1c) at Week 24. Key secondary endpoints include the proportion of participants achieving HbA1c < 7.0% without confirmed hypoglycemia, rate of nocturnal hypoglycemic events, change in fasting plasma glucose, and change in body weight. The study will be conducted at approximately 60 investigational sites across the United States, Germany, France, Japan, Brazil, and China."
+        }
+      ]
+    },
+    {
+      "section_id": "sec_2",
+      "number": "2",
+      "heading": "Background & Rationale",
+      "blocks": [
+        {
+          "block_id": "blk_2_1",
+          "type": "paragraph",
+          "text": "Type 2 Diabetes Mellitus (T2DM) is a chronic metabolic disorder characterized by insulin resistance and progressive beta-cell dysfunction, resulting in hyperglycemia that carries serious long-term complications including cardiovascular disease, nephropathy, retinopathy, and neuropathy. The International Diabetes Federation estimated that 537 million adults worldwide were living with diabetes in 2021, with projections exceeding 783 million by 2045. T2DM accounts for approximately 90–95% of all diabetes cases and imposes an enormous global public health and economic burden, estimated at USD 966 billion in healthcare expenditure in 2021."
+        },
+        {
+          "block_id": "blk_2_2",
+          "type": "paragraph",
+          "text": "Current standard-of-care pharmacotherapy for T2DM involves a stepwise approach beginning with metformin and other oral antidiabetic agents (OADs), progressing to injectable therapies — predominantly basal insulin — when glycemic control remains inadequate. Despite the availability of multiple approved therapies, a substantial proportion of patients fail to achieve and maintain recommended HbA1c targets. Barriers to adequate glycemic control include fear of hypoglycemia, weight gain associated with insulin therapy, complex titration regimens, and patient adherence challenges. There remains a significant unmet medical need for insulin formulations that provide superior glycemic control with a more favorable safety and tolerability profile."
+        },
+        {
+          "block_id": "blk_2_3",
+          "type": "paragraph",
+          "text": "IQV-Glargine-Plus is a novel basal insulin analog developed by IQVIA Therapeutics, Inc. The compound consists of a modified glargine backbone with an extended fatty acid chain enabling reversible albumin binding, resulting in a prolonged half-life and an ultra-flat pharmacokinetic/pharmacodynamic profile compared to first- and second-generation basal insulins. Preclinical studies demonstrated greater receptor selectivity with reduced mitogenic potential compared to insulin glargine U-100. Phase I studies confirmed a glucose-lowering duration of action exceeding 36 hours with low intra-subject variability (CV < 12%) and a favorable safety profile. Phase II data (Study IQV-2024-T2D-201, n=168, 12 weeks) demonstrated a statistically significant reduction in HbA1c of −1.4% versus −1.1% for glargine U-100 (treatment difference −0.3%, 95% CI: −0.52 to −0.08, p=0.007), with significantly lower rates of nocturnal hypoglycemia (0.8 vs. 2.1 events per patient-year, p=0.03) and no significant difference in body weight change."
+        },
+        {
+          "block_id": "blk_2_4",
+          "type": "paragraph",
+          "text": "The design of CLARITY-T2D Phase III is supported by regulatory guidance from the FDA (Diabetes Mellitus — Developing Drugs and Therapeutic Biologics for Treatment and Prevention, 2008, updated 2020) and the EMA (Guideline on clinical investigation of medicinal products in the treatment of diabetes mellitus, 2012). The study population — adults with T2DM inadequately controlled on OADs who are insulin-naïve — represents the target label population and the population in which the Phase II signal was established. The 24-week treatment period is sufficient to demonstrate the primary HbA1c endpoint per regulatory precedent and reflects the duration over which HbA1c stabilizes following insulin initiation."
+        }
+      ]
+    },
+    {
+      "section_id": "sec_3",
+      "number": "3",
+      "heading": "Objectives & Endpoints",
+      "blocks": [
+        {
+          "block_id": "blk_3_1",
+          "type": "paragraph",
+          "text": "Primary Objective: To demonstrate the superiority of IQV-Glargine-Plus over insulin glargine U-100 in reducing HbA1c from baseline to Week 24 in adults with T2DM inadequately controlled on oral antidiabetic therapy."
+        },
+        {
+          "block_id": "blk_3_2",
+          "type": "paragraph",
+          "text": "Primary Endpoint: Change from baseline in HbA1c (%) at Week 24, assessed by central laboratory using NGSP-certified high-performance liquid chromatography (HPLC)."
+        },
+        {
+          "block_id": "blk_3_3",
+          "type": "paragraph",
+          "text": "Key Secondary Objectives: (1) To evaluate the proportion of participants achieving the composite target of HbA1c < 7.0% without confirmed hypoglycemia (plasma glucose < 54 mg/dL or any severe hypoglycemia) at Week 24. (2) To compare the annualized rate of nocturnal confirmed hypoglycemic events between treatment arms over 24 weeks. (3) To assess the effect of IQV-Glargine-Plus on fasting plasma glucose (FPG) from baseline to Week 24. (4) To compare change in body weight from baseline to Week 24. (5) To evaluate patient-reported insulin treatment satisfaction using the Insulin Treatment Satisfaction Questionnaire (ITSQ)."
+        },
+        {
+          "block_id": "blk_3_4",
+          "type": "paragraph",
+          "text": "Exploratory Endpoints: (1) Change in HbA1c at Week 12 (interim glycemic assessment). (2) Proportion of participants achieving HbA1c ≤ 6.5% at Week 24. (3) Proportion requiring rescue medication. (4) Change in 7-point self-monitored blood glucose (SMBG) profile from baseline to Week 24. (5) Incidence of treatment-emergent adverse events, including injection-site reactions and hypersensitivity events. (6) Anti-drug antibody (ADA) titers at baseline, Week 12, and Week 24. (7) Quality of life as assessed by the 12-item Quality-of-Life Questionnaire (QoL_12) at baseline and Week 24. (8) Glycemic variability assessed by continuous glucose monitoring (CGM) in a sub-study at selected sites (n ≈ 80)."
+        }
+      ]
+    },
+    {
+      "section_id": "sec_4",
+      "number": "4",
+      "heading": "Inclusion Criteria",
+      "blocks": [
+        {
+          "block_id": "blk_4_1",
+          "type": "clause",
+          "text": "Be aged 18 to 65 years at the time of screening."
+        },
+        {
+          "block_id": "blk_4_2",
+          "type": "clause",
+          "text": "Have HbA1c between 7.5% and 10.0% at screening."
+        },
+        {
+          "block_id": "blk_4_3",
+          "type": "clause",
+          "text": "Have a body mass index (BMI) below 35 kg/m²."
+        },
+        {
+          "block_id": "blk_4_4",
+          "type": "clause",
+          "text": "Be drug-naïve at screening, with no prior antidiabetic agents of any kind."
+        }
+      ]
+    },
+    {
+      "section_id": "sec_5",
+      "number": "5",
+      "heading": "Exclusion Criteria",
+      "blocks": [
+        {
+          "block_id": "blk_5_1",
+          "type": "clause",
+          "text": "Have a confirmed diagnosis of Type 1 Diabetes Mellitus or latent autoimmune diabetes in adults (LADA), as evidenced by positive anti-GAD65 or anti-IA-2 antibodies."
+        },
+        {
+          "block_id": "blk_5_2",
+          "type": "clause",
+          "text": "Have severe renal impairment, defined as an estimated glomerular filtration rate (eGFR) < 30 mL/min/1.73 m² at screening, or require renal replacement therapy."
+        },
+        {
+          "block_id": "blk_5_3",
+          "type": "clause",
+          "text": "Have experienced a major adverse cardiovascular event (MACE — myocardial infarction, stroke, or hospitalization for unstable angina) within 6 months prior to screening."
+        },
+        {
+          "block_id": "blk_5_4",
+          "type": "clause",
+          "text": "Be pregnant, breastfeeding, or planning to become pregnant during the study period. Women of childbearing potential must have a negative urine or serum pregnancy test at screening and agree to use a protocol-specified contraceptive method for the duration of the study."
+        },
+        {
+          "block_id": "blk_5_5",
+          "type": "clause",
+          "text": "Be currently receiving systemic corticosteroids (equivalent to > 10 mg/day prednisone for > 7 consecutive days within 3 months prior to screening), immunosuppressive therapy, or any investigational drug within 30 days or 5 half-lives (whichever is longer) prior to screening."
+        },
+        {
+          "block_id": "blk_5_6",
+          "type": "clause",
+          "text": "Have severe hepatic impairment, defined as Child-Pugh Class C (score ≥ 10), or alanine aminotransferase (ALT) or aspartate aminotransferase (AST) levels > 3× the upper limit of normal at screening."
+        }
+      ]
+    },
+    {
+      "section_id": "sec_6",
+      "number": "6",
+      "heading": "Visit Schedule",
+      "blocks": [
+        {
+          "block_id": "blk_6_1",
+          "type": "clause",
+          "text": "Screening Visit (Day −14 to Day −1): Informed consent, eligibility assessment, medical history, physical examination, 12-lead ECG, central laboratory assessments (HbA1c, FPG, CBC, CMP, lipid panel, urinalysis, pregnancy test for WOCBP, anti-GAD65/IA-2 antibodies), and CGM device fitting for sub-study participants."
+        },
+        {
+          "block_id": "blk_6_2",
+          "type": "clause",
+          "text": "Treatment Phase — Weekly Clinic Visits for 24 Weeks: Participants must attend clinic weekly throughout the 24-week double-blind treatment period (Weeks 1 through 24), at which time study drug will be dispensed, insulin dose titration will be performed per protocol algorithm, SMBG diaries will be reviewed, and adverse events and concomitant medications will be assessed."
+        },
+        {
+          "block_id": "blk_6_3",
+          "type": "clause",
+          "text": "Visit Window: All scheduled visits must occur within ±3 calendar days of the target date. Visits falling outside this window without documented medical justification will be considered protocol deviations and reported to the sponsor."
+        }
+      ]
+    },
+    {
+      "section_id": "sec_7",
+      "number": "7",
+      "heading": "Investigational Product",
+      "blocks": [
+        {
+          "block_id": "blk_7_1",
+          "type": "paragraph",
+          "text": "IQV-Glargine-Plus (INN: glargine-isopropyltridecanoate) is supplied as a sterile, aqueous, clear, and colorless solution for subcutaneous injection at a concentration of 100 units/mL in 3-mL prefilled pens (KwikPen®-compatible cartridge). Each mL of solution contains 100 units of insulin glargine analog, glycerol 20 mg, zinc chloride 19.6 mcg, metacresol 2.7 mg, and water for injection. The solution is pH-adjusted to 4.0 with dilute hydrochloric acid or sodium hydroxide solution."
+        },
+        {
+          "block_id": "blk_7_2",
+          "type": "paragraph",
+          "text": "Starting Dose and Titration: IQV-Glargine-Plus will be initiated at 10 units subcutaneously once daily at bedtime, regardless of body weight. Dose titration will follow a structured algorithm: if the mean fasting SMBG over the preceding 3 days is > 130 mg/dL (7.2 mmol/L), the dose is increased by 2 units every 3 days. If fasting SMBG is < 80 mg/dL (4.4 mmol/L) on 2 or more consecutive measurements or if a confirmed hypoglycemic event occurs, the dose is decreased by 2–4 units as clinically appropriate, with the investigator's judgment overriding the algorithm in cases of severe hypoglycemia."
+        },
+        {
+          "block_id": "blk_7_3",
+          "type": "paragraph",
+          "text": "Comparator Arm: Participants randomized to the comparator arm will receive insulin glargine U-100 (Lantus®) supplied as 100 units/mL in 3-mL KwikPen® devices, packaged identically to the experimental arm via a double-dummy blinding design. The same starting dose and titration algorithm applies to the comparator arm."
+        },
+        {
+          "block_id": "blk_7_4",
+          "type": "paragraph",
+          "text": "Concomitant Medications: Metformin (≥ 1500 mg/day or maximum tolerated dose) will be maintained at a stable dose throughout the study. All other OADs will be discontinued at randomization. Use of GLP-1 receptor agonists, DPP-4 inhibitors, SGLT-2 inhibitors, thiazolidinediones, or any other antidiabetic agents (excluding metformin) is prohibited during the treatment phase. Rescue medication (rapid-acting insulin for a single fasting SMBG > 300 mg/dL confirmed by repeat measurement within 30 minutes) is permitted as a safety measure and will be considered a protocol deviation for the primary analysis."
+        },
+        {
+          "block_id": "blk_7_5",
+          "type": "paragraph",
+          "text": "Storage and Handling: Unopened pens should be stored under refrigeration at 2°C to 8°C (36°F to 46°F). Do not freeze. Opened (in-use) pens may be stored at room temperature (below 30°C / 86°F) for up to 28 days. Protect from direct heat and sunlight. Drug accountability will be assessed at each visit by return of used and unused pens."
+        }
+      ]
+    },
+    {
+      "section_id": "sec_8",
+      "number": "8",
+      "heading": "Statistical Considerations",
+      "blocks": [
+        {
+          "block_id": "blk_8_1",
+          "type": "paragraph",
+          "text": "Sample Size: Based on Phase II data, the expected treatment difference in HbA1c change from baseline at Week 24 is −0.30%, with a pooled standard deviation of 1.10%. To achieve 90% power to detect superiority at a two-sided alpha of 0.05 using a mixed-model repeated measures (MMRM) analysis, 182 participants per arm (n=364 total) are required. Accounting for a 15% dropout rate, the target enrollment is 210 participants per arm (n=420 total), to be randomized 1:1 across approximately 60 investigational sites."
+        },
+        {
+          "block_id": "blk_8_2",
+          "type": "paragraph",
+          "text": "Primary Analysis: The primary efficacy endpoint will be analyzed using a mixed-model repeated measures (MMRM) approach with change from baseline in HbA1c as the dependent variable. Fixed effects will include treatment group, visit, treatment-by-visit interaction, baseline HbA1c, region (US/Europe/Asia/Latin America), and baseline antidiabetic background therapy as covariates. An unstructured covariance matrix will be used for within-subject measurements. The primary comparison will be the treatment difference at Week 24, with a two-sided 95% confidence interval and p-value."
+        },
+        {
+          "block_id": "blk_8_3",
+          "type": "paragraph",
+          "text": "Multiple Testing Procedure: Key secondary endpoints will be tested using a hierarchical testing procedure to control the familywise Type I error rate at 0.05 (two-sided), in the following order: (1) proportion achieving HbA1c < 7.0% without hypoglycemia; (2) nocturnal hypoglycemia rate; (3) change in FPG; (4) change in body weight; (5) ITSQ total score. Testing will stop at the first non-significant result."
+        },
+        {
+          "block_id": "blk_8_4",
+          "type": "paragraph",
+          "text": "Analysis Populations: The Full Analysis Set (FAS) will be the primary analysis population and will include all randomized participants who received at least one dose of study medication and have at least one post-baseline HbA1c measurement. The Per-Protocol Set (PPS) will exclude participants with major protocol deviations that could affect the primary endpoint. The Safety Analysis Set (SAS) will include all randomized participants who received at least one dose of study medication. Missing data will be addressed using a retrieved dropout approach; if the proportion of missing data exceeds 15% in any arm, a tipping-point sensitivity analysis will be performed."
+        }
+      ]
+    },
+    {
+      "section_id": "sec_9",
+      "number": "9",
+      "heading": "Safety Reporting",
+      "blocks": [
+        {
+          "block_id": "blk_9_1",
+          "type": "paragraph",
+          "text": "Adverse Event Definitions and Grading: All adverse events (AEs) and serious adverse events (SAEs) will be collected from the time of informed consent until 30 days after the last dose of study medication. AEs will be coded using MedDRA (version 28.0 or later) and graded for severity using CTCAE v5.0. Hypoglycemic events will be classified using the American Diabetes Association (ADA)/EASD 2021 consensus definition: (1) Level 1: glucose < 70 mg/dL (3.9 mmol/L) but ≥ 54 mg/dL (3.0 mmol/L); (2) Level 2 (confirmed): glucose < 54 mg/dL (3.0 mmol/L); (3) Level 3 (severe): cognitive impairment requiring external assistance, regardless of glucose level."
+        },
+        {
+          "block_id": "blk_9_2",
+          "type": "paragraph",
+          "text": "SAE Reporting Timeline: The investigator must report all SAEs to the sponsor within 24 hours of becoming aware. Fatal or life-threatening SAEs must be reported to the sponsor and to the relevant regulatory authority within 7 calendar days of initial awareness, followed by a complete report within 15 calendar days. Non-fatal, non-life-threatening SAEs must be reported to the regulatory authority within 15 calendar days. The sponsor's pharmacovigilance department will assess causality and forward reports to all applicable regulatory authorities per regional requirements."
+        },
+        {
+          "block_id": "blk_9_3",
+          "type": "paragraph",
+          "text": "Data Safety Monitoring Board (DSMB): An independent DSMB will be established prior to study initiation, comprising three clinical experts in diabetology, one biostatistician independent of the sponsor, and one cardiologist. The DSMB will review unblinded safety data after 30%, 60%, and 90% of participants complete the 24-week treatment period. The DSMB charter will pre-specify stopping rules for the primary safety endpoint (severe hypoglycemia rate), cardiovascular events, and any unexpected signals. The DSMB has the authority to recommend study continuation, modification, or termination."
+        },
+        {
+          "block_id": "blk_9_4",
+          "type": "paragraph",
+          "text": "Special Populations and Cardiac Monitoring: Given the insulin class's potential for fluid retention and cardiac effects, all participants will undergo a 12-lead ECG at baseline, Week 12, and Week 24. Participants experiencing any cardiac arrhythmia, QTc prolongation > 500 ms, or new-onset heart failure during the study will be immediately assessed by the site investigator, the sponsor's medical monitor will be notified within 24 hours, and the event will be reviewed by the DSMB at its next convened meeting. Anti-drug antibody (ADA) assessments will be performed at all participants at baseline, Week 12, and Week 24; any participant developing ADA titers above 1:10 will be monitored for hypersensitivity reactions and loss of efficacy."
+        }
+      ]
+    }
+  ]
+}

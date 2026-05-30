@@ -1,0 +1,56 @@
+{
+  "severe_hypoglycemia_exclusion": {
+    "match_keywords": ["severe hypoglycemia", "hypoglycemia exclusion", "hypoglycemic event"],
+    "clause_text": "Have a documented history of severe hypoglycemia (defined as an event requiring third-party assistance for recovery) within 6 months prior to screening, OR more than 2 episodes of severe hypoglycemia within the prior 12 months.",
+    "suggested_section": "Section 5 — Exclusion Criteria",
+    "rationale": "Standard exclusion for insulin-titration studies; threshold aligned with ADA hypoglycemia classification."
+  },
+  "hba1c_upper_bound_exclusion": {
+    "match_keywords": ["hba1c upper bound", "hba1c exclusion", "high hba1c"],
+    "clause_text": "Have an HbA1c value greater than 10.5% at screening, suggesting clinically uncontrolled diabetes requiring more intensive intervention than this study can safely provide.",
+    "suggested_section": "Section 5 — Exclusion Criteria",
+    "rationale": "Patients above 10.5% require rapid intervention; ethical to exclude from a comparative trial."
+  },
+  "cardiovascular_history_exclusion": {
+    "match_keywords": ["cardiovascular history", "cardiac history", "myocardial infarction", "stroke", "cardiovascular exclusion"],
+    "clause_text": "Have experienced any of the following within 6 months prior to screening: myocardial infarction, unstable angina, coronary revascularization, stroke, or transient ischemic attack.",
+    "suggested_section": "Section 5 — Exclusion Criteria",
+    "rationale": "Standard cardiovascular safety exclusion window for diabetes Phase III studies; aligned with FDA guidance for glucose-lowering agents."
+  },
+  "renal_function_inclusion": {
+    "match_keywords": ["renal function", "egfr", "kidney function", "renal inclusion"],
+    "clause_text": "Have an estimated glomerular filtration rate (eGFR) of at least 45 mL/min/1.73 m² at screening, calculated by the CKD-EPI equation.",
+    "suggested_section": "Section 4 — Inclusion Criteria",
+    "rationale": "eGFR ≥45 is a common threshold for insulin studies; CKD-EPI is the current standard equation."
+  },
+  "pregnancy_contraception_requirement": {
+    "match_keywords": ["pregnancy", "contraception", "wocbp", "women of childbearing potential"],
+    "clause_text": "Women of childbearing potential must agree to use a highly effective method of contraception (Pearl Index <1) from screening through 30 days after the last dose of study drug. Men with female partners of childbearing potential must agree to use barrier contraception during the same period.",
+    "suggested_section": "Section 4 — Inclusion Criteria",
+    "rationale": "Standard ICH M3 contraception requirement; the language meets EMA and FDA expectations for chronic-treatment Phase III studies."
+  },
+  "age_eligibility": {
+    "match_keywords": ["age eligibility", "age inclusion", "age range inclusion", "minimum age"],
+    "clause_text": "Be between 18 and 75 years of age, inclusive, at the time of screening.",
+    "suggested_section": "Section 4 — Inclusion Criteria",
+    "rationale": "A defined age range (18–75) is standard for Phase III T2DM trials, capturing the adult population while excluding paediatric and very elderly subgroups with distinct risk profiles."
+  },
+  "hba1c_inclusion_range": {
+    "match_keywords": ["hba1c eligibility", "hba1c range", "hba1c inclusion", "glycemic eligibility", "glycemic inclusion"],
+    "clause_text": "Have an HbA1c of 7.0% to 10.5% (inclusive) at screening, measured by the central laboratory.",
+    "suggested_section": "Section 4 — Inclusion Criteria",
+    "rationale": "A 7.0–10.5% HbA1c window selects inadequately-controlled but not acutely uncontrolled T2DM patients, the appropriate population for a comparative glucose-lowering trial."
+  },
+  "bmi_eligibility": {
+    "match_keywords": ["bmi eligibility", "body mass index eligibility", "bmi inclusion", "body mass index inclusion"],
+    "clause_text": "Have a body mass index (BMI) of 18.5 to 40.0 kg/m², inclusive, at screening.",
+    "suggested_section": "Section 4 — Inclusion Criteria",
+    "rationale": "A BMI range of 18.5–40.0 kg/m² captures the dominant T2DM phenotype across US and Brazil while excluding underweight and class III obesity, where insulin pharmacokinetics differ substantially."
+  },
+  "background_antidiabetic_therapy": {
+    "match_keywords": ["background antidiabetic", "antidiabetic therapy eligibility", "background therapy", "drug-naïve eligibility", "drug-naive eligibility"],
+    "clause_text": "Be either drug-naïve or on a stable dose of metformin monotherapy (≥1500 mg/day for ≥12 weeks prior to screening), with no other antidiabetic agents.",
+    "suggested_section": "Section 4 — Inclusion Criteria",
+    "rationale": "Specifying permitted background therapy (drug-naïve or stable metformin) defines a homogeneous baseline population and stabilises screen-failure rates."
+  }
+}

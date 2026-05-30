@@ -1,0 +1,38 @@
+{
+  "v3.2_baseline": {
+    "metrics": {
+      "screen_failure_rate": { "value": 70.0, "unit": "%" },
+      "sites_required": { "value": 60.0, "unit": "sites" },
+      "time_to_lsi_weeks": { "value": 38.0, "unit": "weeks" },
+      "enrollment_cost_savings_usd_m": { "value": 0.0, "unit": "$M" }
+    },
+    "rationale": "Baseline state with all v3.2 high-risk clauses unaddressed. Screen failure rate driven primarily by drug-naïve inclusion and narrow BMI band. Weekly visit schedule for 24 weeks creates investigator burden and extends site activation."
+  },
+  "after_drug_naive_fix": {
+    "metrics": {
+      "screen_failure_rate": { "value": 42.0, "unit": "%" },
+      "sites_required": { "value": 58.0, "unit": "sites" },
+      "time_to_lsi_weeks": { "value": 35.0, "unit": "weeks" },
+      "enrollment_cost_savings_usd_m": { "value": 0.6, "unit": "$M" }
+    },
+    "rationale": "Allowing stable metformin opens enrollment to the majority of newly-diagnosed T2DM patients. Screen failure rate drops sharply from 70% to 42%. Time to LSI shortens by 3 weeks. Estimated $0.6M in enrollment cost savings."
+  },
+  "after_drug_naive_and_bmi_fixes": {
+    "metrics": {
+      "screen_failure_rate": { "value": 32.0, "unit": "%" },
+      "sites_required": { "value": 56.0, "unit": "sites" },
+      "time_to_lsi_weeks": { "value": 34.0, "unit": "weeks" },
+      "enrollment_cost_savings_usd_m": { "value": 1.0, "unit": "$M" }
+    },
+    "rationale": "Widening BMI to ≤40 captures the dominant T2DM phenotype in US and Brazil. Combined with the metformin allowance, screen failure rate is now within typical Phase III range. Time to LSI shortens by 4 weeks total."
+  },
+  "after_all_three_fixes": {
+    "metrics": {
+      "screen_failure_rate": { "value": 28.0, "unit": "%" },
+      "sites_required": { "value": 55.0, "unit": "sites" },
+      "time_to_lsi_weeks": { "value": 33.0, "unit": "weeks" },
+      "enrollment_cost_savings_usd_m": { "value": 1.4, "unit": "$M" }
+    },
+    "rationale": "All three HIGH-risk clauses addressed. Biweekly visit schedule after Week 8 reduces investigator burden by 33%, freeing site capacity. Combined enrollment cost savings of $1.4M and 5-week reduction in time to last-subject-in."
+  }
+}
