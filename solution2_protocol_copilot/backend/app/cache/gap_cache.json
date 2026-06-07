@@ -1,1 +1,92 @@
-{}
+{
+  "e95c7a33298edc28": [
+    {
+      "gap_id": "GAP_001",
+      "name": "Severe hypoglycemia exclusion",
+      "category": "exclusion_criteria",
+      "rationale": "Standard exclusion for insulin-titration studies; ADA recommends excluding patients with recent severe hypoglycemia.",
+      "suggested_section": "Section 5 \u2014 Exclusion Criteria",
+      "suggested_section_id": "sec_5",
+      "draft_topic": "Severe hypoglycemia exclusion",
+      "regulatory_reference": "ADA Hypoglycemia Classification 2023; FDA Guidance for T2DM trials",
+      "severity": "standard"
+    },
+    {
+      "gap_id": "GAP_002",
+      "name": "HbA1c upper bound exclusion",
+      "category": "exclusion_criteria",
+      "rationale": "Patients with HbA1c >10.5% typically require rapid intervention beyond what a comparative trial can safely provide.",
+      "suggested_section": "Section 5 \u2014 Exclusion Criteria",
+      "suggested_section_id": "sec_5",
+      "draft_topic": "HbA1c upper bound exclusion",
+      "regulatory_reference": "FDA Guidance for glucose-lowering agents",
+      "severity": "standard"
+    },
+    {
+      "gap_id": "GAP_004",
+      "name": "Bariatric surgery exclusion",
+      "category": "exclusion_criteria",
+      "rationale": "Bariatric procedures cause substantial changes in insulin sensitivity and gut hormones, confounding T2DM trial outcomes. Commonly omitted in first drafts.",
+      "suggested_section": "Section 5 \u2014 Exclusion Criteria",
+      "suggested_section_id": "sec_5",
+      "draft_topic": "bariatric surgery exclusion",
+      "regulatory_reference": "ADA Standards of Care 2024",
+      "severity": "recommended"
+    },
+    {
+      "gap_id": "GAP_005",
+      "name": "Minimum T2DM duration",
+      "category": "inclusion_criteria",
+      "rationale": "Phase III trials of glucose-lowering agents typically require \u22656 months since T2DM diagnosis to ensure a stable disease phenotype.",
+      "suggested_section": "Section 4 \u2014 Inclusion Criteria",
+      "suggested_section_id": "sec_4",
+      "draft_topic": "minimum T2DM duration inclusion criterion",
+      "regulatory_reference": "EMA Diabetes Guideline 2018",
+      "severity": "recommended"
+    },
+    {
+      "gap_id": "GAP_006",
+      "name": "Renal function inclusion",
+      "category": "inclusion_criteria",
+      "rationale": "Renal function eligibility is required; eGFR \u226545 mL/min is the common threshold for insulin studies.",
+      "suggested_section": "Section 4 \u2014 Inclusion Criteria",
+      "suggested_section_id": "sec_4",
+      "draft_topic": "renal function inclusion criterion",
+      "regulatory_reference": "KDIGO 2024 Diabetes & CKD Guideline",
+      "severity": "recommended"
+    },
+    {
+      "gap_id": "GAP_008",
+      "name": "Hypoglycemia adjudication committee",
+      "category": "safety_reporting",
+      "rationale": "Standard for insulin studies; blinded adjudication of hypoglycemic events strengthens primary endpoint reliability.",
+      "suggested_section": "Section 9 \u2014 Safety Reporting",
+      "suggested_section_id": "sec_9",
+      "draft_topic": "hypoglycemia adjudication committee",
+      "regulatory_reference": "FDA Guidance for industry: Diabetes Mellitus Endpoint Adjudication",
+      "severity": "standard"
+    },
+    {
+      "gap_id": "GAP_LLM_1",
+      "name": "Contraception Requirements for Women of Childbearing Potential (WOCBP)",
+      "category": "inclusion_criteria",
+      "rationale": "Regulatory guidelines require clear contraception requirements to minimize fetal risk in clinical trials involving investigational drugs, especially in chronic conditions like T2DM.",
+      "suggested_section": "Inclusion Criteria",
+      "suggested_section_id": "sec_4",
+      "draft_topic": "Contraception use and pregnancy avoidance requirements for WOCBP",
+      "regulatory_reference": "ICH E6(R2), FDA Guidance for Industry: Considerations for Inclusion of Women in Clinical Trials",
+      "severity": "standard"
+    },
+    {
+      "gap_id": "GAP_LLM_2",
+      "name": "Prohibited Medications During the Study",
+      "category": "other",
+      "rationale": "To ensure data integrity and patient safety, protocols must specify medications that are not allowed during the trial that could confound efficacy or safety assessments.",
+      "suggested_section": "Other",
+      "suggested_section_id": "sec_9",
+      "draft_topic": "List of prohibited concomitant medications and therapies",
+      "regulatory_reference": "FDA Guidance for Industry: Diabetes Mellitus \u2014 Developing Drugs and Therapeutic Biologics for Treatment and Prevention",
+      "severity": "standard"
+    }
+  ]
+}
